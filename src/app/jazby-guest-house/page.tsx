@@ -1,6 +1,9 @@
 'use client';
 
+import { useRef, Suspense } from 'react';
 import PropertySection from '@/components/PropertySection';
+import BookingForm from '@/components/BookingForm';
+import { Home, ConciergeBell, Users, Car, Wifi, Bath, Wind, Mountain, ShowerHead, Utensils } from 'lucide-react';
 import styles from './page.module.css';
 
 const JAZBY_SECTIONS = [
@@ -32,12 +35,33 @@ const JAZBY_SECTIONS = [
 ];
 
 export default function JazbyPage() {
+    const bookingRef = useRef<HTMLDivElement>(null);
+
+    const scrollToBooking = () => {
+        bookingRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <div className={styles.pageContainer}>
             <header className={styles.pageHeader}>
                 <div className={`container ${styles.headerContent}`}>
-                    <h1>Jazby Guest House</h1>
-                    <p>Premium comfort and outstanding value. Discover your serene stay in Naivasha, perfectly positioned near the best wildlife spots.</p>
+                    <div className={styles.headerText}>
+                        <h1>Jazby Guest House</h1>
+                        <p>Discover the best guest rooms near Nakuru and full accommodation guest houses in Naivasha. Jazby Guest House offers premium comfort, exceptional value, and free WiFi, perfectly positioned for your serene stay near Hell&apos;s Gate.</p>
+                    </div>
+                    <div className={styles.headerAmenities}>
+                        <div className={styles.amenity}><Home size={20} /> <span>Apartments</span></div>
+                        <div className={styles.amenity}><ConciergeBell size={20} /> <span>Room service</span></div>
+                        <div className={styles.amenity}><Users size={20} /> <span>Family rooms</span></div>
+                        <div className={styles.amenity}><Car size={20} /> <span>Free on-site parking</span></div>
+                        <div className={styles.amenity}><Wifi size={20} /> <span>Free Wifi (In all areas • 24 Mbps)</span></div>
+                        <div className={styles.amenity}><Bath size={20} /> <span>Private bathroom</span></div>
+                        <div className={styles.amenity}><Wind size={20} /> <span>Balcony</span></div>
+                        <div className={styles.amenity}><Mountain size={20} /> <span>View</span></div>
+                        <div className={styles.amenity}><ShowerHead size={20} /> <span>Shower</span></div>
+                        <div className={styles.amenity}><Utensils size={20} /> <span>Kitchenette</span></div>
+                    </div>
+                    <button onClick={scrollToBooking} className="btn-primary">Book Jazby Now</button>
                 </div>
             </header>
 
@@ -45,11 +69,22 @@ export default function JazbyPage() {
                 <PropertySection sections={JAZBY_SECTIONS} />
             </main>
 
-            <section className={styles.bookingCta}>
-                <div className={`container ${styles.ctaContent}`}>
-                    <h2>Reserve Your Stay</h2>
-                    <p>Don&apos;t miss out on securing the best rates for your Naivasha retreat.</p>
-                    <a href="/contact?property=jazby" className="btn-primary">Book Jazby</a>
+            <section ref={bookingRef} className={styles.bookingSection}>
+                <div className={`container ${styles.bookingContainer}`}>
+                    <div className={styles.bookingInfo}>
+                        <h2>Reserve Your Stay</h2>
+                        <p>Experience the ultimate comfort at Jazby Guest House. Fill out the form below, and our team will get back to you with availability and a personalized quote.</p>
+                        <ul className={styles.bookingHighlights}>
+                            <li>✓ Instant enquiry via Resend</li>
+                            <li>✓ Direct communication</li>
+                            <li>✓ Best price guaranteed</li>
+                        </ul>
+                    </div>
+                    <div className={styles.formWrapper}>
+                        <Suspense fallback={<div className={styles.formLoading}>Loading form...</div>}>
+                            <BookingForm defaultProperty="Jazby Guest House" />
+                        </Suspense>
+                    </div>
                 </div>
             </section>
         </div>

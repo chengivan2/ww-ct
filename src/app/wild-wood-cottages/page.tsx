@@ -1,6 +1,9 @@
 'use client';
 
+import { useRef, Suspense } from 'react';
 import PropertySection from '@/components/PropertySection';
+import BookingForm from '@/components/BookingForm';
+import { Home, ConciergeBell, Users, Car, Wifi, Bath, Wind, Mountain, ShowerHead, Utensils } from 'lucide-react';
 import styles from './page.module.css';
 
 const WILDWOOD_SECTIONS = [
@@ -32,12 +35,33 @@ const WILDWOOD_SECTIONS = [
 ];
 
 export default function WildWoodPage() {
+    const bookingRef = useRef<HTMLDivElement>(null);
+
+    const scrollToBooking = () => {
+        bookingRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <div className={styles.pageContainer}>
             <header className={styles.pageHeader}>
                 <div className={`container ${styles.headerContent}`}>
-                    <h1>Wild Wood Cottages</h1>
-                    <p>A serene nature retreat near Hell&apos;s Gate. Unwind in complete tranquility with our self-catering, highly accessible ground floor units.</p>
+                    <div className={styles.headerText}>
+                        <h1>Wild Wood Cottages</h1>
+                        <p>Discover the best cottages in Naivasha and full accommodation cottages. Wild Wood Cottages offers a serene nature retreat perfectly positioned near Hell&apos;s Gate, featuring highly accessible suites and breathtaking views.</p>
+                    </div>
+                    <div className={styles.headerAmenities}>
+                        <div className={styles.amenity}><Home size={20} /> <span>Apartments</span></div>
+                        <div className={styles.amenity}><ConciergeBell size={20} /> <span>Room service</span></div>
+                        <div className={styles.amenity}><Users size={20} /> <span>Family rooms</span></div>
+                        <div className={styles.amenity}><Car size={20} /> <span>Free on-site parking</span></div>
+                        <div className={styles.amenity}><Wifi size={20} /> <span>Free Wifi (In all areas • 24 Mbps)</span></div>
+                        <div className={styles.amenity}><Bath size={20} /> <span>Private bathroom</span></div>
+                        <div className={styles.amenity}><Wind size={20} /> <span>Balcony</span></div>
+                        <div className={styles.amenity}><Mountain size={20} /> <span>View</span></div>
+                        <div className={styles.amenity}><ShowerHead size={20} /> <span>Shower</span></div>
+                        <div className={styles.amenity}><Utensils size={20} /> <span>Kitchenette</span></div>
+                    </div>
+                    <button onClick={scrollToBooking} className="btn-primary">Book Wild Wood Now</button>
                 </div>
             </header>
 
@@ -45,11 +69,22 @@ export default function WildWoodPage() {
                 <PropertySection sections={WILDWOOD_SECTIONS} />
             </main>
 
-            <section className={styles.bookingCta}>
-                <div className={`container ${styles.ctaContent}`}>
-                    <h2>Plan Your Escape</h2>
-                    <p>Contact us now to secure your stay at Wild Wood Cottages and reconnect with nature.</p>
-                    <a href="/contact?property=wildwood" className="btn-primary">Book Wild Wood</a>
+            <section ref={bookingRef} className={styles.bookingSection}>
+                <div className={`container ${styles.bookingContainer}`}>
+                    <div className={styles.bookingInfo}>
+                        <h2>Plan Your Escape</h2>
+                        <p>Reconnect with nature at Wild Wood Cottages. Fill out the form below to enquire about availability and special rates for your serene getaway.</p>
+                        <ul className={styles.bookingHighlights}>
+                            <li>✓ Highly accessible units</li>
+                            <li>✓ Direct enquiry response</li>
+                            <li>✓ Personalized nature retreats</li>
+                        </ul>
+                    </div>
+                    <div className={styles.formWrapper}>
+                        <Suspense fallback={<div className={styles.formLoading}>Loading form...</div>}>
+                            <BookingForm defaultProperty="Wild Wood Cottages" />
+                        </Suspense>
+                    </div>
                 </div>
             </section>
         </div>

@@ -4,10 +4,16 @@ import { useState } from 'react';
 import styles from './BookingForm.module.css';
 import { useSearchParams } from 'next/navigation';
 
-export default function BookingForm() {
+interface BookingFormProps {
+    defaultProperty?: string;
+}
+
+export default function BookingForm({ defaultProperty }: BookingFormProps) {
     const searchParams = useSearchParams();
-    const initialProperty = searchParams.get('property') === 'wildwood' ? 'Wild Wood Cottages' :
+    const queryProperty = searchParams.get('property') === 'wildwood' ? 'Wild Wood Cottages' :
         searchParams.get('property') === 'jazby' ? 'Jazby Guest House' : '';
+
+    const initialProperty = defaultProperty || queryProperty || '';
 
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
@@ -63,15 +69,19 @@ export default function BookingForm() {
             </div>
 
             <div className={styles.row}>
-                <div className={styles.formGroup}>
-                    <label htmlFor="property" className={styles.label}>Property</label>
-                    <select id="property" name="property" required defaultValue={initialProperty} className={styles.inputField}>
-                        <option value="" disabled>Select a property</option>
-                        <option value="Jazby Guest House">Jazby Guest House</option>
-                        <option value="Wild Wood Cottages">Wild Wood Cottages</option>
-                        <option value="General Enquiry">General Enquiry</option>
-                    </select>
-                </div>
+                {!defaultProperty ? (
+                    <div className={styles.formGroup}>
+                        <label htmlFor="property" className={styles.label}>Property</label>
+                        <select id="property" name="property" required defaultValue={initialProperty} className={styles.inputField}>
+                            <option value="" disabled>Select a property</option>
+                            <option value="Jazby Guest House">Jazby Guest House</option>
+                            <option value="Wild Wood Cottages">Wild Wood Cottages</option>
+                            <option value="General Enquiry">General Enquiry</option>
+                        </select>
+                    </div>
+                ) : (
+                    <input type="hidden" name="property" value={defaultProperty} />
+                )}
 
                 <div className={styles.formGroup}>
                     <label htmlFor="dates" className={styles.label}>Preferred Dates</label>

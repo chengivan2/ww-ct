@@ -23,7 +23,7 @@ export default function Header() {
         <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
             <div className={`container ${styles.navContainer}`}>
                 <Link href="/" className={styles.logo}>
-                    <Image src="/logos/wildwood-escapes-no-bg.png" alt="Wild Wood Escapes Logo" width={40} height={40} className={styles.logoImage} />
+                    <Image src="/logos/wildwood-escapes-no-bg.png" alt="Wild Wood Escapes Logo" width={55} height={55} className={styles.logoImage} />
                     <span>Wild Wood Escapes</span>
                 </Link>
                 <nav className={styles.navLinks}>
