@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import styles from './PropertySection.module.css';
 
 interface RoomSection {
@@ -53,9 +54,13 @@ export default function PropertySection({ sections }: PropertySectionProps) {
                                     whileInView={{ opacity: 1, scale: 1 }}
                                     viewport={{ once: true, margin: "-50px" }}
                                 >
-                                    <div className={styles.imagePlaceholder}>
-                                        <span>{imgSrc} <br />(Actual Image Path)</span>
-                                    </div>
+                                    <Image
+                                        src={imgSrc}
+                                        alt={`${section.title} view ${imgIndex + 1}`}
+                                        fill
+                                        className={styles.propertyImage}
+                                        sizes="(max-width: 1024px) 100vw, 50vw"
+                                    />
                                 </motion.div>
                             ))}
                         </div>

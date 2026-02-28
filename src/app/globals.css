@@ -67,10 +67,12 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid var(--accent);
 }
 
 .btn-primary:hover {
-  background-color: #a55a2f;
+  background-color: transparent;
+  color: var(--accent);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(190, 102, 53, 0.3);
 }
