@@ -1,0 +1,244 @@
+{
+    "bathroom": [
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772343351/Silv-3904_lx10c5.jpg",
+            "width": 6106,
+            "height": 4569,
+            "aspect_ratio": 1.34,
+            "format": "jpg",
+            "public_id": "Silv-3904_lx10c5"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772343348/Silv-3958_xb5wr9.jpg",
+            "width": 4640,
+            "height": 6960,
+            "aspect_ratio": 0.67,
+            "format": "jpg",
+            "public_id": "Silv-3958_xb5wr9"
+        }
+    ],
+    "bedroom": [
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772342601/Silv-3991_lz0qfy.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-3991_lz0qfy"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772342594/Silv-3935_brxtc8.jpg",
+            "width": 6788,
+            "height": 4525,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-3935_brxtc8"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772342589/Silv-3928_nwdqza.jpg",
+            "width": 6561,
+            "height": 4554,
+            "aspect_ratio": 1.44,
+            "format": "jpg",
+            "public_id": "Silv-3928_nwdqza"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772342583/IMG-20250316-WA0013_qstn8j.jpg",
+            "width": 1280,
+            "height": 960,
+            "aspect_ratio": 1.33,
+            "format": "jpg",
+            "public_id": "IMG-20250316-WA0013_qstn8j"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772342582/IMG_0426_guljng.jpg",
+            "width": 4032,
+            "height": 3024,
+            "aspect_ratio": 1.33,
+            "format": "jpg",
+            "public_id": "IMG_0426_guljng"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772342577/Silv-4037_yfe0jj.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4037_yfe0jj"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772342574/Silv-4018_m6093c.jpg",
+            "width": 6758,
+            "height": 4505,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4018_m6093c"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772342571/Silv-4010_kvug6c.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4010_kvug6c"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772342566/IMG_20250614_083434_zgcs4x.jpg",
+            "width": 4000,
+            "height": 2256,
+            "aspect_ratio": 1.77,
+            "format": "jpg",
+            "public_id": "IMG_20250614_083434_zgcs4x"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772342565/IMG_20250614_083545_vef5x2.jpg",
+            "width": 3264,
+            "height": 1840,
+            "aspect_ratio": 1.77,
+            "format": "jpg",
+            "public_id": "IMG_20250614_083545_vef5x2"
+        }
+    ],
+    "exterior": [
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772341185/Silv-4070_rkjoaz.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4070_rkjoaz"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772341180/Silv-3964_qnuyac.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-3964_qnuyac"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772341178/Silv-3858_tawea7.jpg",
+            "width": 6789,
+            "height": 4526,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-3858_tawea7"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772341174/Silv-0803_ykhvxo.jpg",
+            "width": 3651,
+            "height": 2445,
+            "aspect_ratio": 1.49,
+            "format": "jpg",
+            "public_id": "Silv-0803_ykhvxo"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772341170/IMG_20250614_083417_bnzcwu.jpg",
+            "width": 2256,
+            "height": 4000,
+            "aspect_ratio": 0.56,
+            "format": "jpg",
+            "public_id": "IMG_20250614_083417_bnzcwu"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772341168/32f94cb6-fdfe-46a5-b58d-20e9cbb3bd5c_3_1740862168312_wpbgau.jpg",
+            "width": 720,
+            "height": 1082,
+            "aspect_ratio": 0.67,
+            "format": "jpg",
+            "public_id": "32f94cb6-fdfe-46a5-b58d-20e9cbb3bd5c_3_1740862168312_wpbgau"
+        }
+    ],
+    "kitchen": [
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772343141/IMG_0515_mliykq.jpg",
+            "width": 4032,
+            "height": 3024,
+            "aspect_ratio": 1.33,
+            "format": "jpg",
+            "public_id": "IMG_0515_mliykq"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772343110/IMG_0509_xbupi8.jpg",
+            "width": 4032,
+            "height": 3024,
+            "aspect_ratio": 1.33,
+            "format": "jpg",
+            "public_id": "IMG_0509_xbupi8"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772343105/Silv-3829_pw3uzk.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-3829_pw3uzk"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772343098/IMG_0426_a6o5al.jpg",
+            "width": 4032,
+            "height": 3024,
+            "aspect_ratio": 1.33,
+            "format": "jpg",
+            "public_id": "IMG_0426_a6o5al"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772343093/IMG_0017_thazvk.jpg",
+            "width": 1170,
+            "height": 1546,
+            "aspect_ratio": 0.76,
+            "format": "jpg",
+            "public_id": "IMG_0017_thazvk"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772343089/IMG_0016_n8k8lh.jpg",
+            "width": 1170,
+            "height": 867,
+            "aspect_ratio": 1.35,
+            "format": "jpg",
+            "public_id": "IMG_0016_n8k8lh"
+        }
+    ],
+    "living-room": [
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772341876/Silv-3948_cborxf.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-3948_cborxf"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772341871/Silv-4046_xuh4v5.jpg",
+            "width": 6906,
+            "height": 4604,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4046_xuh4v5"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772341866/IMG_0508_zvmnlk.jpg",
+            "width": 4032,
+            "height": 3024,
+            "aspect_ratio": 1.33,
+            "format": "jpg",
+            "public_id": "IMG_0508_zvmnlk"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772341866/Silv-4043_f092dn.jpg",
+            "width": 6839,
+            "height": 4559,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4043_f092dn"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772341856/IMG_0517_j6hytz.jpg",
+            "width": 4032,
+            "height": 3024,
+            "aspect_ratio": 1.33,
+            "format": "jpg",
+            "public_id": "IMG_0517_j6hytz"
+        }
+    ]
+}

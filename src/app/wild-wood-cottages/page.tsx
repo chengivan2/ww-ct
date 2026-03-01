@@ -3,6 +3,7 @@
 import { useRef, Suspense } from 'react';
 import PropertySection from '@/components/PropertySection';
 import BookingForm from '@/components/BookingForm';
+import wildwoodImages from '@/data/wildwood-images.json';
 import { Home, ConciergeBell, Users, Car, Wifi, Bath, Wind, Mountain, ShowerHead, Utensils } from 'lucide-react';
 import styles from './page.module.css';
 
@@ -10,27 +11,27 @@ const WILDWOOD_SECTIONS = [
     {
         title: "The Living Room",
         description: "A haven of peace in our cottages in Naivasha. The seating area is equipped with a cozy sofa and soundproofing for total quiet, with large windows that invite the natural Nakuru County sunlight in for a perfect nature retreat.",
-        images: ["/images/wildwood/living-room/wildwood-ct-img-13.jpg", "/images/wildwood/living-room/wildwood-ct-img-15.jpg", "/images/wildwood/living-room/wildwood-ct-img-3.jpg", "/images/wildwood/living-room/wildwood-ct-img-6.jpg"]
+        images: wildwoodImages["living-room"]
     },
     {
         title: "The Kitchen",
         description: "Embrace the freedom of self-catering in one of the best cottages in Naivasha. Our kitchenette features modern tools to cook up a storm in your private sanctuary after a day of exploring Crescent Island or Hell's Gate.",
-        images: ["/images/wildwood/kitchen/wildwood-ct-img-16.webp"]
+        images: wildwoodImages["kitchen"]
     },
     {
         title: "The Bedroom",
         description: "Wake up to breathtaking mountain and lake views in our premium nature retreat. These bedrooms offer a rustic feel with comfortable bedding, ensuring you are refreshed for your next Naivasha adventure.",
-        images: ["/images/wildwood/bedroom/wildwood-ct-img-14.jpg", "/images/wildwood/bedroom/wildwood-ct-img-2.jpg"]
+        images: wildwoodImages["bedroom"]
     },
     {
         title: "The Bathroom",
         description: "Our private, spotless bathrooms are designed to complement your pristine getaway. Equipped with soothing showers and fresh towels, they provide the luxury you expect from the best cottages in Naivasha.",
-        images: ["/images/wildwood/bathroom/wildwood-ct-img-17.avif", "/images/wildwood/bathroom/wildwood-ct-img-18.avif"]
+        images: wildwoodImages["bathroom"]
     },
     {
         title: "The Exterior",
         description: "Step out into nature at one of the most accessible nature retreats in Nakuru County. Our ground floor units offer immediate access to the outdoors where you can marvel at the Naivasha landscape and nearby wildlife.",
-        images: ["/images/wildwood/exterior/wildwood-ct-img-1.jpg", "/images/wildwood/exterior/wildwood-ct-img-10.jpg", "/images/wildwood/exterior/wildwood-ct-img-11.jpg", "/images/wildwood/exterior/wildwood-ct-img-12.jpg", "/images/wildwood/exterior/wildwood-ct-img-4.jpg", "/images/wildwood/exterior/wildwood-ct-img-5.jpg", "/images/wildwood/exterior/wildwood-ct-img-7.jpg", "/images/wildwood/exterior/wildwood-ct-img-8.jpg", "/images/wildwood/exterior/wildwood-ct-img-9.jpg"]
+        images: wildwoodImages["exterior"]
     }
 ];
 

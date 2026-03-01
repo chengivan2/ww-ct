@@ -1,0 +1,284 @@
+{
+    "bathroom": [
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772340577/WhatsApp_Image_2025-01-12_at_21.44.13_ijy6n2.jpg",
+            "width": 721,
+            "height": 1600,
+            "aspect_ratio": 0.45,
+            "format": "jpg",
+            "public_id": "WhatsApp_Image_2025-01-12_at_21.44.13_ijy6n2"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772339943/Silv-4125_rqsmkb.jpg",
+            "width": 4640,
+            "height": 6960,
+            "aspect_ratio": 0.67,
+            "format": "jpg",
+            "public_id": "Silv-4125_rqsmkb"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772339941/Silv-4124_dfej3y.jpg",
+            "width": 4640,
+            "height": 6960,
+            "aspect_ratio": 0.67,
+            "format": "jpg",
+            "public_id": "Silv-4124_dfej3y"
+        }
+    ],
+    "bedroom": [
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772339418/WhatsApp_Image_2025-01-12_at_21.35.54_hngbaa.jpg",
+            "width": 1600,
+            "height": 721,
+            "aspect_ratio": 2.22,
+            "format": "jpg",
+            "public_id": "WhatsApp_Image_2025-01-12_at_21.35.54_hngbaa"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772339415/WhatsApp_Image_2025-01-12_at_21.34.03_am8410.jpg",
+            "width": 1600,
+            "height": 721,
+            "aspect_ratio": 2.22,
+            "format": "jpg",
+            "public_id": "WhatsApp_Image_2025-01-12_at_21.34.03_am8410"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772339413/WhatsApp_Image_2025-01-15_at_14.07.55_qtkvvy.jpg",
+            "width": 1600,
+            "height": 721,
+            "aspect_ratio": 2.22,
+            "format": "jpg",
+            "public_id": "WhatsApp_Image_2025-01-15_at_14.07.55_qtkvvy"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772339410/WhatsApp_Image_2025-01-15_at_14.06.26_n4crzy.jpg",
+            "width": 1600,
+            "height": 721,
+            "aspect_ratio": 2.22,
+            "format": "jpg",
+            "public_id": "WhatsApp_Image_2025-01-15_at_14.06.26_n4crzy"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772339404/Silv-4106_yvgtfo.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4106_yvgtfo"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772339403/WhatsApp_Image_2025-01-12_at_21.40.39_prcuyj.jpg",
+            "width": 1600,
+            "height": 721,
+            "aspect_ratio": 2.22,
+            "format": "jpg",
+            "public_id": "WhatsApp_Image_2025-01-12_at_21.40.39_prcuyj"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772339402/20250204_210312_r7aj7u.jpg",
+            "width": 4624,
+            "height": 2084,
+            "aspect_ratio": 2.22,
+            "format": "jpg",
+            "public_id": "20250204_210312_r7aj7u"
+        }
+    ],
+    "exterior": [
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772340553/20250614_170518_xivoj3.jpg",
+            "width": 4080,
+            "height": 2296,
+            "aspect_ratio": 1.78,
+            "format": "jpg",
+            "public_id": "20250614_170518_xivoj3"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772340550/20250324_105039_cja1yl.jpg",
+            "width": 4080,
+            "height": 3060,
+            "aspect_ratio": 1.33,
+            "format": "jpg",
+            "public_id": "20250324_105039_cja1yl"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772340545/20250204_203803_vdlpyg.jpg",
+            "width": 2084,
+            "height": 2998,
+            "aspect_ratio": 0.7,
+            "format": "jpg",
+            "public_id": "20250204_203803_vdlpyg"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772338543/20250412_152719_tsn7vp.jpg",
+            "width": 4080,
+            "height": 3060,
+            "aspect_ratio": 1.33,
+            "format": "jpg",
+            "public_id": "20250412_152719_tsn7vp"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772338541/IMG_20250614_160934_qq6hgq.jpg",
+            "width": 4000,
+            "height": 2256,
+            "aspect_ratio": 1.77,
+            "format": "jpg",
+            "public_id": "IMG_20250614_160934_qq6hgq"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772338541/IMG_20250614_154729_mpkacz.jpg",
+            "width": 4000,
+            "height": 2256,
+            "aspect_ratio": 1.77,
+            "format": "jpg",
+            "public_id": "IMG_20250614_154729_mpkacz"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772338540/20250412_152458_krorms.jpg",
+            "width": 4080,
+            "height": 3060,
+            "aspect_ratio": 1.33,
+            "format": "jpg",
+            "public_id": "20250412_152458_krorms"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772337744/Silv-4155_w7yqou.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4155_w7yqou"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772337740/Silv-4175_jju2ih.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4175_jju2ih"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772337457/Silv-4164_cyfr22.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4164_cyfr22"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772337447/20250614_194709_bthp02.jpg",
+            "width": 4080,
+            "height": 2296,
+            "aspect_ratio": 1.78,
+            "format": "jpg",
+            "public_id": "20250614_194709_bthp02"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772337446/Silv-4137_wh1yvp.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4137_wh1yvp"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772337443/Silv-4163_gaw40u.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4163_gaw40u"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772337443/Silv-4213_pmt1t3.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4213_pmt1t3"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772337440/Silv-4132_scjire.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4132_scjire"
+        }
+    ],
+    "kitchen": [
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772338955/20250324_104647_l6skhm.jpg",
+            "width": 3060,
+            "height": 4080,
+            "aspect_ratio": 0.75,
+            "format": "jpg",
+            "public_id": "20250324_104647_l6skhm"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772338954/20250324_103631_fcvjtx.jpg",
+            "width": 4080,
+            "height": 3060,
+            "aspect_ratio": 1.33,
+            "format": "jpg",
+            "public_id": "20250324_103631_fcvjtx"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772337771/Silv-4108_qr4gd6.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4108_qr4gd6"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772337771/Silv-4116_i3ef6b.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4116_i3ef6b"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772337770/Silv-4119_vmt0uj.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4119_vmt0uj"
+        }
+    ],
+    "living-room": [
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772340485/WhatsApp_Image_2025-01-12_at_21.38.16_zgy51k.jpg",
+            "width": 1600,
+            "height": 721,
+            "aspect_ratio": 2.22,
+            "format": "jpg",
+            "public_id": "WhatsApp_Image_2025-01-12_at_21.38.16_zgy51k"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772340485/Silv-4109_pa5iq2.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4109_pa5iq2"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772340485/WhatsApp_Image_2025-01-12_at_21.35.08_rmehmy.jpg",
+            "width": 1600,
+            "height": 720,
+            "aspect_ratio": 2.22,
+            "format": "jpg",
+            "public_id": "WhatsApp_Image_2025-01-12_at_21.35.08_rmehmy"
+        },
+        {
+            "url": "https://res.cloudinary.com/dikq4no6r/image/upload/v1772340483/Silv-4108_s7ckor.jpg",
+            "width": 6960,
+            "height": 4640,
+            "aspect_ratio": 1.5,
+            "format": "jpg",
+            "public_id": "Silv-4108_s7ckor"
+        }
+    ]
+}

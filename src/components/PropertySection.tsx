@@ -4,10 +4,19 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import styles from './PropertySection.module.css';
 
+interface CloudinaryImage {
+    url: string;
+    width: number;
+    height: number;
+    aspect_ratio: number;
+    format: string;
+    public_id: string;
+}
+
 interface RoomSection {
     title: string;
     description: string;
-    images: string[];
+    images: CloudinaryImage[];
 }
 
 interface PropertySectionProps {
@@ -44,25 +53,34 @@ export default function PropertySection({ sections }: PropertySectionProps) {
                             </div>
                         </div>
 
-                        {/* Scrolling Images Side */}
+                        {/* Scrolling Masonry Images Side */}
                         <div className={styles.imageColumn}>
-                            {section.images.map((imgSrc, imgIndex) => (
-                                <motion.div
-                                    key={imgIndex}
-                                    className={styles.imageWrapper}
-                                    initial={{ opacity: 0, scale: 0.95 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    viewport={{ once: true, margin: "-50px" }}
-                                >
-                                    <Image
-                                        src={imgSrc}
-                                        alt={`${section.title} view ${imgIndex + 1}`}
-                                        fill
-                                        className={styles.propertyImage}
-                                        sizes="(max-width: 1024px) 100vw, 50vw"
-                                    />
-                                </motion.div>
-                            ))}
+                            {section.images.map((img, imgIndex) => {
+                                // Determine grid span based on aspect ratio
+                                // Landscape (wide): span 2 columns
+                                // Portrait (tall): span 1 column, height auto
+                                const isLandscape = img.aspect_ratio > 1.2;
+
+                                return (
+                                    <motion.div
+                                        key={img.public_id || imgIndex}
+                                        className={`${styles.imageWrapper} ${isLandscape ? styles.landscape : styles.portrait}`}
+                                        initial={{ opacity: 0, scale: 0.95 }}
+                                        whileInView={{ opacity: 1, scale: 1 }}
+                                        viewport={{ once: true, margin: "-50px" }}
+                                    >
+                                        <Image
+                                            src={img.url}
+                                            alt={`${section.title} view ${imgIndex + 1}`}
+                                            width={img.width}
+                                            height={img.height}
+                                            className={styles.propertyImage}
+                                            sizes="(max-width: 1024px) 100vw, (max-width: 1400px) 50vw, 700px"
+                                            priority={index === 0 && imgIndex === 0}
+                                        />
+                                    </motion.div>
+                                );
+                            })}
                         </div>
                     </div>
                 );

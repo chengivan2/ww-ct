@@ -3,6 +3,7 @@
 import { useRef, Suspense } from 'react';
 import PropertySection from '@/components/PropertySection';
 import BookingForm from '@/components/BookingForm';
+import jazbyImages from '@/data/jazby-images.json';
 import { Home, ConciergeBell, Users, Car, Wifi, Bath, Wind, Mountain, ShowerHead, Utensils } from 'lucide-react';
 import styles from './page.module.css';
 
@@ -10,27 +11,27 @@ const JAZBY_SECTIONS = [
     {
         title: "The Living Room",
         description: "Relax in our spacious, well-lit living area, designed to be one of the best guest rooms in Naivasha for comfort and style. Outfitted with plush seating and a flat-screen TV, it offers a warm ambiance perfect for unwinding after a day of adventure in Nakuru County.",
-        images: ["/images/jazby/living-room/jazby-gh-img-1.jpg", "/images/jazby/living-room/jazby-gh-img-6.jpg"]
+        images: jazbyImages["living-room"]
     },
     {
         title: "The Kitchen",
         description: "Our fully equipped shared kitchen allows you to embrace the freedom of self-catering during your stay at our guest houses in Naivasha. Features modern appliances and ample counter space, ideal for preparing meals after exploring Hell's Gate.",
-        images: ["/images/jazby/kitchen/jazby-gh-img-4.jpg", "/images/jazby/kitchen/jazby-gh-img-5.jpg", "/images/jazby/kitchen/jazby-gh-img-8.webp", "/images/jazby/kitchen/jazby-gh-img-9.webp"]
+        images: jazbyImages["kitchen"]
     },
     {
         title: "The Bedroom",
         description: "Rest easy in our plush rooms, offering some of the best guest accommodation in Naivasha. Each bedroom is designed for maximum tranquility with premium linens and soundproofing to ensure a peaceful night in the heart of Nakuru County.",
-        images: ["/images/jazby/bedroom/jazby-gh-img-10.webp", "/images/jazby/bedroom/jazby-gh-img-11.webp", "/images/jazby/bedroom/jazby-gh-img-12.webp", "/images/jazby/bedroom/jazby-gh-img-7.jpg"]
+        images: jazbyImages["bedroom"]
     },
     {
         title: "The Bathroom",
         description: "Experience modern elegance in our clean, private bathrooms. Featuring walk-in showers and premium toiletries, they provide a refreshing touch to your pristine getaway in Naivasha.",
-        images: ["/images/jazby/bathroom/jazby-gh-img-2.jpg"]
+        images: jazbyImages["bathroom"]
     },
     {
         title: "The Exterior",
         description: "Step outside to enjoy our outdoor fireplace and serene atmosphere. Take in the crisp Naivasha air where you might spot local wildlife, making Jazby one of the most sought-after guest houses in Naivasha for a nature retreat.",
-        images: ["/images/jazby/exterior/jazby-gh-img-3.jpg", "/images/jazby/exterior/jazby-gh-img-ext1.jpg", "/images/jazby/exterior/jazby-gh-img-ext2.jpg"]
+        images: jazbyImages["exterior"]
     }
 ];
 
