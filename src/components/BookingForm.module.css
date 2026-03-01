@@ -32,8 +32,24 @@
     font-size: 0.95rem;
 }
 
+.inputWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.inputIcon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--foreground);
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 1;
+}
+
 .inputField {
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 3rem;
     border-radius: 6px;
     border: 1px solid var(--border);
     background-color: var(--background);
@@ -41,12 +57,75 @@
     font-family: inherit;
     font-size: 1rem;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+}
+
+select.inputField {
+    appearance: none;
+    cursor: pointer;
+}
+
+textarea.inputField {
+    min-height: 120px;
+    resize: vertical;
 }
 
 .inputField:focus {
     outline: none;
     border-color: var(--accent);
     box-shadow: 0 0 0 3px rgba(190, 102, 53, 0.1);
+}
+
+/* Custom DatePicker Styles */
+:global(.react-datepicker-wrapper) {
+    width: 100%;
+}
+
+:global(.react-datepicker) {
+    font-family: inherit;
+    border: 1px solid var(--border);
+    background-color: var(--surface);
+    color: var(--foreground);
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+:global(.react-datepicker__header) {
+    background-color: var(--background);
+    border-bottom: 1px solid var(--border);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 1rem 0;
+}
+
+:global(.react-datepicker__current-month) {
+    color: var(--foreground);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+:global(.react-datepicker__day-name) {
+    color: var(--foreground);
+}
+
+:global(.react-datepicker__day) {
+    color: var(--foreground);
+}
+
+:global(.react-datepicker__day:hover) {
+    background-color: rgba(190, 102, 53, 0.1);
+    color: var(--accent);
+}
+
+:global(.react-datepicker__day--selected),
+:global(.react-datepicker__day--in-range),
+:global(.react-datepicker__day--keyboard-selected) {
+    background-color: var(--accent) !important;
+    color: white !important;
+}
+
+:global(.react-datepicker__navigation-icon::before) {
+    border-color: var(--accent) !important;
 }
 
 .submitBtn {

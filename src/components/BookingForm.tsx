@@ -1,6 +1,9 @@
 'use client';
 
 import { useState } from 'react';
+import DatePicker from 'react-datepicker';
+import "react-datepicker/dist/react-datepicker.css";
+import { User, Mail, Home, Calendar, MessageSquare } from 'lucide-react';
 import styles from './BookingForm.module.css';
 import { useSearchParams } from 'next/navigation';
 
@@ -16,6 +19,8 @@ export default function BookingForm({ defaultProperty }: BookingFormProps) {
     const initialProperty = defaultProperty || queryProperty || '';
 
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+    const [checkIn, setCheckIn] = useState<Date | null>(null);
+    const [checkOut, setCheckOut] = useState<Date | null>(null);
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
@@ -25,8 +30,8 @@ export default function BookingForm({ defaultProperty }: BookingFormProps) {
         const data = {
             name: formData.get('name'),
             email: formData.get('email'),
-            checkIn: formData.get('checkIn'),
-            checkOut: formData.get('checkOut'),
+            checkIn: checkIn ? checkIn.toLocaleDateString() : '',
+            checkOut: checkOut ? checkOut.toLocaleDateString() : '',
             property: formData.get('property'),
             message: formData.get('message'),
         };
@@ -42,7 +47,7 @@ export default function BookingForm({ defaultProperty }: BookingFormProps) {
             } else {
                 setStatus('error');
             }
-        } catch (err) {
+        } catch {
             setStatus('error');
         }
     }
@@ -61,24 +66,33 @@ export default function BookingForm({ defaultProperty }: BookingFormProps) {
         <form className={styles.formContainer} onSubmit={handleSubmit}>
             <div className={styles.formGroup}>
                 <label htmlFor="name" className={styles.label}>Full Name</label>
-                <input type="text" id="name" name="name" required placeholder="John Doe" className={styles.inputField} />
+                <div className={styles.inputWrapper}>
+                    <User size={18} className={styles.inputIcon} />
+                    <input type="text" id="name" name="name" required placeholder="John Doe" className={styles.inputField} />
+                </div>
             </div>
 
             <div className={styles.formGroup}>
                 <label htmlFor="email" className={styles.label}>Email Address</label>
-                <input type="email" id="email" name="email" required placeholder="john@example.com" className={styles.inputField} />
+                <div className={styles.inputWrapper}>
+                    <Mail size={18} className={styles.inputIcon} />
+                    <input type="email" id="email" name="email" required placeholder="john@example.com" className={styles.inputField} />
+                </div>
             </div>
 
             <div className={styles.row}>
                 {!defaultProperty ? (
                     <div className={styles.formGroup}>
                         <label htmlFor="property" className={styles.label}>Property</label>
-                        <select id="property" name="property" required defaultValue={initialProperty} className={styles.inputField}>
-                            <option value="" disabled>Select a property</option>
-                            <option value="Jazby Guest House">Jazby Guest House</option>
-                            <option value="Wild Wood Cottages">Wild Wood Cottages</option>
-                            <option value="General Enquiry">General Enquiry</option>
-                        </select>
+                        <div className={styles.inputWrapper}>
+                            <Home size={18} className={styles.inputIcon} />
+                            <select id="property" name="property" required defaultValue={initialProperty} className={styles.inputField}>
+                                <option value="" disabled>Select a property</option>
+                                <option value="Jazby Guest House">Jazby Guest House</option>
+                                <option value="Wild Wood Cottages">Wild Wood Cottages</option>
+                                <option value="General Enquiry">General Enquiry</option>
+                            </select>
+                        </div>
                     </div>
                 ) : (
                     <input type="hidden" name="property" value={defaultProperty} />
@@ -88,18 +102,47 @@ export default function BookingForm({ defaultProperty }: BookingFormProps) {
             <div className={styles.row}>
                 <div className={styles.formGroup}>
                     <label htmlFor="checkIn" className={styles.label}>Check-in Date</label>
-                    <input type="date" id="checkIn" name="checkIn" required className={styles.inputField} />
+                    <div className={styles.inputWrapper}>
+                        <Calendar size={18} className={styles.inputIcon} />
+                        <DatePicker
+                            selected={checkIn}
+                            onChange={(date: Date | null) => setCheckIn(date)}
+                            selectsStart
+                            startDate={checkIn}
+                            endDate={checkOut}
+                            minDate={new Date()}
+                            placeholderText="Select date"
+                            className={styles.inputField}
+                            required
+                        />
+                    </div>
                 </div>
 
                 <div className={styles.formGroup}>
                     <label htmlFor="checkOut" className={styles.label}>Check-out Date</label>
-                    <input type="date" id="checkOut" name="checkOut" required className={styles.inputField} />
+                    <div className={styles.inputWrapper}>
+                        <Calendar size={18} className={styles.inputIcon} />
+                        <DatePicker
+                            selected={checkOut}
+                            onChange={(date: Date | null) => setCheckOut(date)}
+                            selectsEnd
+                            startDate={checkIn}
+                            endDate={checkOut}
+                            minDate={checkIn || new Date()}
+                            placeholderText="Select date"
+                            className={styles.inputField}
+                            required
+                        />
+                    </div>
                 </div>
             </div>
 
             <div className={styles.formGroup}>
                 <label htmlFor="message" className={styles.label}>Message / Special Requests</label>
-                <textarea id="message" name="message" rows={5} placeholder="Tell us about any specific needs..." className={styles.inputField} />
+                <div className={styles.inputWrapper}>
+                    <MessageSquare size={18} className={styles.inputIcon} style={{ top: '1.2rem' }} />
+                    <textarea id="message" name="message" rows={5} placeholder="Tell us about any specific needs..." className={styles.inputField} />
+                </div>
             </div>
 
             <button type="submit" className={`btn-primary ${styles.submitBtn}`} disabled={status === 'loading'}>
