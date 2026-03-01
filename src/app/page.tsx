@@ -155,7 +155,7 @@ export default function Home() {
       <section className={styles.ctaSection}>
         <div className={`container ${styles.ctaContent}`}>
           <h2>Ready for your escape?</h2>
-          <p>Book your serene stay today and experience the ultimate relaxation in Naivasha.</p>
+          <p>Book your stay at the best guest houses and cottages in Naivasha with the best support team, and experience the ultimate relaxation.</p>
           <Link href="/contact" className={styles.ctaButton}>
             <Phone size={20} />
             Contact Us
