@@ -48,7 +48,7 @@ export default function WildWoodPage() {
                 <div className={`container ${styles.headerContent}`}>
                     <div className={styles.headerText}>
                         <h1>Wild Wood Cottages</h1>
-                        <p>Discover the best cottages in Naivasha and full accommodation cottages. Wild Wood Cottages offers a serene nature retreat perfectly positioned near Hell&apos;s Gate, featuring highly accessible suites and breathtaking views.</p>
+                        <p>Discover the best **self-catering cottages in Naivasha** and **luxury cottages Lake Naivasha** has to offer. Wild Wood Cottages offers a serene nature retreat perfectly positioned near Hell&apos;s Gate, featuring highly accessible suites and breathtaking views.</p>
                     </div>
                     <div className={styles.headerAmenities}>
                         <div className={styles.amenity}><Home size={20} /> <span>Apartments</span></div>

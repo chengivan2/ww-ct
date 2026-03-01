@@ -75,7 +75,7 @@ export default function Home() {
           <h1>Discover Serenity in Naivasha</h1>
           <p>
             Experience the best cottages and guest houses near Hell&apos;s Gate.
-            A perfect blend of nature, comfort, and premium hospitality.
+            A perfect blend of nature, comfort, and premium hospitality for your ultimate **staycation in Naivasha**.
           </p>
           <div className={styles.propertiesGrid}>
             <motion.div
@@ -90,7 +90,7 @@ export default function Home() {
                 </div>
                 <div className={styles.cardContent}>
                   <h3>Jazby Guest House</h3>
-                  <p>Top-rated comfort, exceptional value, and right near nature. Perfect to beat the WRC prices.</p>
+                  <p>Top-rated comfort, exceptional value, and right near nature. One of the premier **vacation rentals Naivasha** has to offer to beat the WRC prices.</p>
                   <span className={styles.cardLink}>Explore &rarr;</span>
                 </div>
               </Link>
@@ -108,7 +108,7 @@ export default function Home() {
                 </div>
                 <div className={styles.cardContent}>
                   <h3>Wild Wood Cottages</h3>
-                  <p>A serene nature retreat with mountain views, perfect for a self-catering getaway.</p>
+                  <p>A serene nature retreat with mountain views, perfect for a self-catering getaway in one of the best **Naivasha holiday homes**.</p>
                   <span className={styles.cardLink}>Explore &rarr;</span>
                 </div>
               </Link>

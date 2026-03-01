@@ -34,6 +34,12 @@ export const metadata: Metadata = {
     "best cottages in Naivasha",
     "beautiful cottages in Naivasha",
     "full accommodation cottages in Naivasha",
+    "Vacation rentals Naivasha",
+    "Self-catering cottages Naivasha",
+    "Naivasha holiday homes",
+    "Luxury cottages Lake Naivasha",
+    "Cottages near Hell's Gate National Park",
+    "Staycation Naivasha"
   ],
   openGraph: {
     images: ["/logos/wildwood-escapes.png"],

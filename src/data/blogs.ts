@@ -41,5 +41,22 @@ Wild Wood Cottages offers the best self-catering cottages in Naivasha. Our groun
         content: `Finding the perfect accommodation in Nakuru County can be daunting. The "best guest houses in Naivasha" should offer more than just a bed; they should offer an experience. When seeking the best hotel rooms near Hell's Gate or Nakuru, always look for autonomy, privacy, and modern amenities.
       
 At Wild Wood Escapes, our properties—Jazby Guest House and Wild Wood Cottages—prioritize your autonomy and comfort. With fast WiFi, fully equipped kitchens, beautiful modern living rooms, and private parking, we provide a "home away from home" experience. Whether you’re stopping over near Nakuru or planning a long stay near Lake Naivasha, we guarantee a premium stay that feels entirely yours.`
+    },
+    {
+        slug: 'ultimate-hells-gate-itinerary-stay',
+        title: "The Ultimate Hell's Gate Itinerary: Where to Stay and What to See",
+        excerpt: "Planning a trip to Hell's Gate? Explore our 48-hour itinerary and discover why we are the best cottages near Hell's Gate National Park for your staycation.",
+        date: '2026-03-01',
+        author: 'Admin',
+        image: '/images/wildwood/exterior-3.jpg',
+        content: `Hell's Gate National Park is a jewel of the Rift Valley, and planning the perfect visit requires a balance of adventure and relaxation. If you're looking for the best **cottages near Hell's Gate National Park**, look no further than Wild Wood Cottages. 
+
+### Day 1: Arrival & Sunset Views
+Start your **staycation Naivasha** by checking into your private sanctuary. Spend the afternoon cycling through the park's main circuit, spotting zebras and giraffes. Head back to the cottages—the ultimate **Naivasha holiday homes**—to enjoy a sunset over the cliffs from your private porch.
+
+### Day 2: The Gorges & The Spa
+Dedicate your morning to exploring the Ol Njorowa Gorges with a local guide. After a lunch prepared in your self-catering kitchen, head to the Olkaria Geothermal Spa for a dip in the natural hot water pools.
+
+Wild Wood Cottages stands out as one of the most serene **vacation rentals Naivasha** has to offer, combining proximity to the park with the quiet luxury of a private retreat. Book your Hell's Gate adventure today!`
     }
 ];
