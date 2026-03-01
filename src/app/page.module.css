@@ -8,11 +8,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 2rem;
+    padding: 8rem 2rem 4rem;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.95) 100%), url("/images/stock/wildwood-hero.avif") no-repeat center center;
     background-size: cover;
     border-bottom: 1px solid var(--border);
-    padding-top: 6rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,7 +36,7 @@
 .heroContent p {
     font-size: 1.25rem;
     opacity: 0.8;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -67,29 +66,14 @@
     background: var(--surface);
 }
 
-.propertiesSection {
-    padding: 8rem 2rem;
-}
 
-.sectionHeader {
-    text-align: center;
-    margin-bottom: 5rem;
-}
-
-.sectionHeader h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.sectionHeader p {
-    opacity: 0.7;
-    font-size: 1.1rem;
-}
 
 .propertiesGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -126,12 +110,12 @@
 
 .cardImagePlaceholder,
 .cardImagePlaceholderDark {
-    height: 350px;
+    height: 180px;
     background-color: #222;
     position: relative;
     display: flex;
     align-items: flex-end;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .cardImagePlaceholder {
@@ -156,10 +140,11 @@
 }
 
 .cardContent {
-    padding: 2.5rem;
+    padding: 1.5rem;
     flex: 1;
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 
 .cardContent h3 {
