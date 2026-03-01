@@ -137,4 +137,8 @@
     .bookingInfo h2 {
         font-size: 2.5rem;
     }
+
+    .bookingSection {
+        padding: 6rem 1rem;
+    }
 }

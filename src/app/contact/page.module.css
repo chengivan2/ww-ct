@@ -38,6 +38,7 @@
     .mainContent {
         grid-template-columns: 1fr;
         gap: 3rem;
+        padding: 4rem 1rem;
     }
 }
 

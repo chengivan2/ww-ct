@@ -39,7 +39,12 @@ export const metadata: Metadata = {
     "Naivasha holiday homes",
     "Luxury cottages Lake Naivasha",
     "Cottages near Hell's Gate National Park",
-    "Staycation Naivasha"
+    "Staycation Naivasha",
+    "WRC Safari Rally Kenya",
+    "best place to stay during WRC Safari Rally",
+    "Naivasha rally accommodation",
+    "WRC Safari Rally 2026",
+    "motorsports destination Naivasha"
   ],
   openGraph: {
     images: ["/logos/wildwood-escapes.png"],

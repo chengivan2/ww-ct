@@ -90,7 +90,7 @@ export default function Home() {
                 </div>
                 <div className={styles.cardContent}>
                   <h3>Jazby Guest House</h3>
-                  <p>Top-rated comfort, exceptional value, and right near nature. One of the premier **vacation rentals Naivasha** has to offer to beat the WRC prices.</p>
+                  <p>Top-rated comfort, exceptional value, and right near nature. One of the premier **vacation rentals Naivasha** has to offer to beat the **WRC Safari Rally Kenya** prices.</p>
                   <span className={styles.cardLink}>Explore &rarr;</span>
                 </div>
               </Link>

@@ -8,6 +8,12 @@
     border: 1px solid var(--border);
 }
 
+@media (max-width: 480px) {
+    .formContainer {
+        padding: 1.5rem 1rem;
+    }
+}
+
 .formGroup {
     display: flex;
     flex-direction: column;
