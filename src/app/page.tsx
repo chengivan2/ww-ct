@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Wifi, Utensils, Sparkles, Mountain, Car, Crown, Accessibility, Map, Headphones } from 'lucide-react';
+import { Wifi, Utensils, Sparkles, Mountain, Car, Crown, Accessibility, Map, Headphones, Phone } from 'lucide-react';
 import styles from './page.module.css';
 
 const AMENITIES = [
@@ -156,7 +156,10 @@ export default function Home() {
         <div className={`container ${styles.ctaContent}`}>
           <h2>Ready for your escape?</h2>
           <p>Book your serene stay today and experience the ultimate relaxation in Naivasha.</p>
-          <Link href="/contact" className="btn-primary btn-inverted">Contact Us</Link>
+          <Link href="/contact" className={styles.ctaButton}>
+            <Phone size={20} />
+            Contact Us
+          </Link>
         </div>
       </section>
     </div>

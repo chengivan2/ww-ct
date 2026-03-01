@@ -335,15 +335,45 @@
     margin-right: auto;
 }
 
-.btn-inverted {
-    background-color: #fff !important;
-    color: var(--accent) !important;
-    border: 1px solid #fff !important;
+.ctaButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem 3rem;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    margin-top: 1rem;
 }
 
-.btn-inverted:hover {
-    background-color: transparent !important;
-    color: #fff !important;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2) !important;
-    transform: translateY(-2px);
+.ctaButton:hover {
+    background-color: #fff;
+    color: var(--accent);
+    border-radius: 50px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.ctaButton svg {
+    transition: transform 0.5s ease;
+}
+
+.ctaButton:hover svg {
+    transform: rotate(15deg) scale(1.2);
+}
+
+@media (max-width: 640px) {
+    .ctaButton {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
 }
