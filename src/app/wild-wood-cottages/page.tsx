@@ -1,11 +1,14 @@
 'use client';
 
 import { useRef, Suspense } from 'react';
+import Image from 'next/image';
 import PropertySection from '@/components/PropertySection';
 import BookingForm from '@/components/BookingForm';
 import wildwoodImages from '@/data/wildwood-images.json';
 import { Home, ConciergeBell, Users, Car, Wifi, Bath, Wind, Mountain, ShowerHead, Utensils } from 'lucide-react';
 import styles from './page.module.css';
+
+const WILDWOOD_LOGO = "/logos/wildwood-cottages/wildwood-cottages-no-bg.png";
 
 const WILDWOOD_SECTIONS = [
     {
@@ -47,7 +50,12 @@ export default function WildWoodPage() {
             <header className={styles.pageHeader}>
                 <div className={`container ${styles.headerContent}`}>
                     <div className={styles.headerText}>
-                        <h1>Wild Wood Cottages</h1>
+                        <div className={styles.titleWrapper}>
+                            <h1>Wild Wood Cottages</h1>
+                            <div className={styles.propertyLogo}>
+                                <Image src={WILDWOOD_LOGO} alt="Wild Wood Logo" width={220} height={80} className={styles.headerLogo} />
+                            </div>
+                        </div>
                         <p>Discover the best **self-catering cottages in Naivasha** and **luxury cottages Lake Naivasha** has to offer. Wild Wood Cottages offers a serene nature retreat perfectly positioned near Hell&apos;s Gate, featuring highly accessible suites and breathtaking views.</p>
                     </div>
                     <div className={styles.headerAmenities}>
@@ -87,6 +95,8 @@ export default function WildWoodPage() {
                                 defaultProperty="Wild Wood Cottages"
                                 successTitle="Your Nature Retreat Awaits!"
                                 successMessage="Thank you for enquiring about the best cottages in Naivasha. We're excited to help you plan your serene getaway and will be in touch soon."
+                                logo={WILDWOOD_LOGO}
+                                propertyName="Wild Wood Cottages"
                             />
                         </Suspense>
                     </div>

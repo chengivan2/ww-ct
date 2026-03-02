@@ -1,11 +1,14 @@
 'use client';
 
 import { useRef, Suspense } from 'react';
+import Image from 'next/image';
 import PropertySection from '@/components/PropertySection';
 import BookingForm from '@/components/BookingForm';
 import jazbyImages from '@/data/jazby-images.json';
 import { Home, ConciergeBell, Users, Car, Wifi, Bath, Wind, Mountain, ShowerHead, Utensils } from 'lucide-react';
 import styles from './page.module.css';
+
+const JAZBY_LOGO = "/logos/jazby/jazby-1-no-bg.png";
 
 const JAZBY_SECTIONS = [
     {
@@ -47,7 +50,12 @@ export default function JazbyPage() {
             <header className={styles.pageHeader}>
                 <div className={`container ${styles.headerContent}`}>
                     <div className={styles.headerText}>
-                        <h1>Jazby Guest House</h1>
+                        <div className={styles.titleWrapper}>
+                            <h1>Jazby Guest House</h1>
+                            <div className={styles.propertyLogo}>
+                                <Image src={JAZBY_LOGO} alt="Jazby Logo" width={180} height={70} className={styles.headerLogo} />
+                            </div>
+                        </div>
                         <p>Discover the best guest rooms near Nakuru and full accommodation guest houses in Naivasha. Jazby Guest House offers premium comfort, exceptional value, and free WiFi, perfectly positioned for your serene stay near Hell&apos;s Gate.</p>
                     </div>
                     <div className={styles.headerAmenities}>
@@ -87,6 +95,8 @@ export default function JazbyPage() {
                                 defaultProperty="Jazby Guest House"
                                 successTitle="Thank You for Choosing Jazby!"
                                 successMessage="We've received your enquiry for the best guest house in Naivasha. Our team will contact you shortly with a personalized quote for your stay."
+                                logo={JAZBY_LOGO}
+                                propertyName="Jazby Guest House"
                             />
                         </Suspense>
                     </div>

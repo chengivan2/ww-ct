@@ -8,6 +8,19 @@
     border: 1px solid var(--border);
 }
 
+.formLogo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.logoImage {
+    object-fit: contain;
+    width: auto;
+    height: auto;
+    max-height: 80px;
+}
+
 @media (max-width: 480px) {
     .formContainer {
         padding: 1.5rem 1rem;

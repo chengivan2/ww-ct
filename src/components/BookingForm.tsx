@@ -12,9 +12,19 @@ interface BookingFormProps {
     defaultProperty?: string;
     successTitle?: string;
     successMessage?: string;
+    logo?: string;
+    propertyName?: string;
 }
 
-export default function BookingForm({ defaultProperty, successTitle, successMessage }: BookingFormProps) {
+import Image from 'next/image';
+
+export default function BookingForm({
+    defaultProperty,
+    successTitle,
+    successMessage,
+    logo,
+    propertyName
+}: BookingFormProps) {
     const searchParams = useSearchParams();
     const queryProperty = searchParams.get('property') === 'wildwood' ? 'Wild Wood Cottages' :
         searchParams.get('property') === 'jazby' ? 'Jazby Guest House' : '';
@@ -70,6 +80,17 @@ export default function BookingForm({ defaultProperty, successTitle, successMess
 
     return (
         <form className={styles.formContainer} onSubmit={handleSubmit}>
+            {logo && (
+                <div className={styles.formLogo}>
+                    <Image
+                        src={logo}
+                        alt={`${propertyName || 'Property'} Logo`}
+                        width={200}
+                        height={80}
+                        className={styles.logoImage}
+                    />
+                </div>
+            )}
             <div className={styles.formGroup}>
                 <label htmlFor="name" className={styles.label}>Full Name</label>
                 <div className={styles.inputWrapper}>
