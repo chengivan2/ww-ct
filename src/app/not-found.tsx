@@ -27,7 +27,7 @@ export default function NotFound() {
                 <div className={styles.emailCard}>
                     <h3>Need direct assistance?</h3>
                     <p>Reach out to us directly to book your serene stay.</p>
-                    <a href="mailto:admin@wildwoodescapes.com" className={styles.emailLink}>admin@wildwoodescapes.com</a>
+                    <a href="mailto:info@wildwoodescapes.com" className={styles.emailLink}>info@wildwoodescapes.com</a>
                 </div>
 
                 <div className={styles.socials}>

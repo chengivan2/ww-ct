@@ -21,7 +21,7 @@ export default function Footer() {
                 </div>
                 <div className={styles.contact}>
                     <h3>Contact</h3>
-                    <p>Email: admin@wildwoodescapes.com</p>
+                    <p>Email: info@wildwoodescapes.com</p>
                     <p>Location: Naivasha, Kenya</p>
                 </div>
             </div>
