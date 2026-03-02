@@ -68,7 +68,7 @@ Wild Wood Cottages stands out as one of the most serene vacation rentals Naivash
         excerpt: "The WRC Safari Rally is the world's toughest rally. Discover why Naivasha is the place to be and find the best place to stay during the rally in 2026.",
         date: '2026-03-01',
         author: 'Admin',
-        image: '/images/jazby/exterior-2.jpg',
+        image: 'https://res.cloudinary.com/dikq4no6r/image/upload/v1772461279/wrc_safari_rally_kenya_2025_ford_sjwck2.avif',
         imageCredit: 'Image by WRC Mediaroom / Red Bull Contentpool / Jaanus Ree',
         content: `The WRC Safari Rally Kenya is not just a race; it's a global phenomenon that transforms Naivasha into the ultimate motorsports destination. From the dust of the Sleeping Warrior to the high-speed stretches of Kedong, the energy is electric.
 
