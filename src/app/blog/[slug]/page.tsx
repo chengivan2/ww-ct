@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { blogs } from '@/data/blogs';
 import styles from './page.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
     const params = await props.params;
@@ -40,9 +41,17 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
 
             <main className={`container ${styles.blogMain}`}>
                 <div className={styles.imageContainer}>
-                    <div className={styles.imagePlaceholder}>
-                        <span>{blog.image}</span>
-                    </div>
+                    <Image
+                        src={blog.image}
+                        alt={blog.title}
+                        width={1200}
+                        height={600}
+                        className={styles.postImage}
+                        priority
+                    />
+                    {blog.imageCredit && (
+                        <p className={styles.imageCredit}>{blog.imageCredit}</p>
+                    )}
                 </div>
 
                 <article className={styles.articleContent}>

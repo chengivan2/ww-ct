@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { blogs } from '@/data/blogs';
 import styles from './page.module.css';
 import type { Metadata } from 'next';
@@ -19,13 +20,17 @@ export default function BlogListingPage() {
             </header>
 
             <main className={`container ${styles.blogGrid}`}>
-                {blogs.map((blog) => (
+                {blogs.map((blog, index) => (
                     <article key={blog.slug} className={styles.blogCard}>
                         <div className={styles.blogImage}>
-                            {/* Placeholder gradient for image */}
-                            <div className={styles.imagePlaceholder}>
-                                <span>{blog.image}</span>
-                            </div>
+                            <Image
+                                src={blog.image}
+                                alt={blog.title}
+                                fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                className={styles.featuredImage}
+                                priority={index < 3}
+                            />
                         </div>
                         <div className={styles.blogContent}>
                             <div className={styles.blogMeta}>
