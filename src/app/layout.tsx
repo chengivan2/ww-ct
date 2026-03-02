@@ -3,6 +3,7 @@ import { Bricolage_Grotesque, Familjen_Grotesk } from "next/font/google";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import "./globals.css";
 
 const bricolage = Bricolage_Grotesque({
@@ -80,6 +81,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );
