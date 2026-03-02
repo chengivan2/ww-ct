@@ -4,6 +4,7 @@ import { useRef, Suspense } from 'react';
 import Image from 'next/image';
 import PropertySection from '@/components/PropertySection';
 import BookingForm from '@/components/BookingForm';
+import ReviewsSection from '@/components/ReviewsSection';
 import wildwoodImages from '@/data/wildwood-images.json';
 import { Home, ConciergeBell, Users, Car, Wifi, Bath, Wind, Mountain, ShowerHead, Utensils } from 'lucide-react';
 import styles from './page.module.css';
@@ -76,6 +77,7 @@ export default function WildWoodPage() {
 
             <main>
                 <PropertySection sections={WILDWOOD_SECTIONS} />
+                <ReviewsSection propertyName="Wild Wood Cottages" />
             </main>
 
             <section ref={bookingRef} className={styles.bookingSection}>

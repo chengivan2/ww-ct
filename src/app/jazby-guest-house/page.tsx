@@ -4,6 +4,7 @@ import { useRef, Suspense } from 'react';
 import Image from 'next/image';
 import PropertySection from '@/components/PropertySection';
 import BookingForm from '@/components/BookingForm';
+import ReviewsSection from '@/components/ReviewsSection';
 import jazbyImages from '@/data/jazby-images.json';
 import { Home, ConciergeBell, Users, Car, Wifi, Bath, Wind, Mountain, ShowerHead, Utensils } from 'lucide-react';
 import styles from './page.module.css';
@@ -76,6 +77,7 @@ export default function JazbyPage() {
 
             <main>
                 <PropertySection sections={JAZBY_SECTIONS} />
+                <ReviewsSection propertyName="Jazby Guest House" />
             </main>
 
             <section ref={bookingRef} className={styles.bookingSection}>

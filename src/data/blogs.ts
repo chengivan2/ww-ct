@@ -51,7 +51,7 @@ At Wild Wood Escapes, our propertiesâ€”Jazby Guest House and Wild Wood Cottagesâ
         excerpt: "Planning a trip to Hell's Gate? Explore our 48-hour itinerary and discover why we are the best cottages near Hell's Gate National Park for your staycation.",
         date: '2026-03-01',
         author: 'Admin',
-        image: 'https://res.cloudinary.com/dikq4no6r/image/upload/v1772337446/Silv-4137_wh1yvp.jpg',
+        image: 'https://res.cloudinary.com/dikq4no6r/image/upload/v1772340483/Silv-4108_s7ckor.jpg',
         content: `Hell's Gate National Park is a jewel of the Rift Valley, and planning the perfect visit requires a balance of adventure and relaxation. If you're looking for the best cottages near Hell's Gate National Park, look no further than Wild Wood Cottages. 
 
 Day 1: Arrival & Sunset Views
