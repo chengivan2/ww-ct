@@ -55,6 +55,17 @@
     opacity: 0.8;
 }
 
+.homeLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.divider {
+    opacity: 0.2;
+}
+
 @media (max-width: 768px) {
     .section {
         padding: 6rem 0;

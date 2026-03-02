@@ -1,15 +1,26 @@
 import React from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { reviews } from '@/data/reviews';
 import ReviewCard from './ReviewCard';
 import styles from './ReviewsSection.module.css';
 
 interface ReviewsSectionProps {
-    propertyName: 'Wild Wood Cottages' | 'Jazby Guest House';
+    propertyName?: 'Wild Wood Cottages' | 'Jazby Guest House';
+    isFeatured?: boolean;
 }
 
-const ReviewsSection: React.FC<ReviewsSectionProps> = ({ propertyName }) => {
-    const propertyReviews = reviews.filter(r => r.property === propertyName);
+const ReviewsSection: React.FC<ReviewsSectionProps> = ({ propertyName, isFeatured }) => {
+    let propertyReviews = [];
+
+    if (isFeatured) {
+        // Take 2 top reviews from each property
+        const wildWoodReviews = reviews.filter(r => r.property === 'Wild Wood Cottages').slice(0, 2);
+        const jazbyReviews = reviews.filter(r => r.property === 'Jazby Guest House').slice(0, 2);
+        propertyReviews = [...wildWoodReviews, ...jazbyReviews];
+    } else if (propertyName) {
+        propertyReviews = reviews.filter(r => r.property === propertyName);
+    }
 
     if (propertyReviews.length === 0) return null;
 
@@ -31,7 +42,10 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ propertyName }) => {
                         transition={{ delay: 0.1 }}
                         className={styles.subtitle}
                     >
-                        Read what our guests have to say about their stay at {propertyName} via Booking.com.
+                        {isFeatured
+                            ? "See why our guests love staying at Wild Wood Escapes properties."
+                            : `Read what our guests have to say about their stay at ${propertyName} via Booking.com.`
+                        }
                     </motion.p>
                 </div>
 
@@ -51,14 +65,22 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ propertyName }) => {
 
                 <div className={styles.footer}>
                     <p>Verified reviews from our verified guests.</p>
-                    <a
-                        href={`https://www.booking.com/searchresults.html?ss=${encodeURIComponent(propertyName)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.bookingLink}
-                    >
-                        View all reviews on Booking.com →
-                    </a>
+                    {isFeatured ? (
+                        <div className={styles.homeLinks}>
+                            <Link href="/wild-wood-cottages" className={styles.bookingLink}>Wild Wood Reviews →</Link>
+                            <span className={styles.divider}>|</span>
+                            <Link href="/jazby-guest-house" className={styles.bookingLink}>Jazby Reviews →</Link>
+                        </div>
+                    ) : (
+                        <a
+                            href={`https://www.booking.com/searchresults.html?ss=${encodeURIComponent(propertyName || '')}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.bookingLink}
+                        >
+                            View all reviews on Booking.com →
+                        </a>
+                    )}
                 </div>
             </div>
         </section>

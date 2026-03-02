@@ -3,61 +3,62 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Wifi, Utensils, Sparkles, Mountain, Car, Crown, Accessibility, Map, Headphones, Phone } from 'lucide-react';
+import ReviewsSection from '@/components/ReviewsSection';
 import styles from './page.module.css';
 
 const AMENITIES = [
   {
     icon: <Wifi size={24} />,
     title: "Free High-Speed WiFi",
-    description: "Stay connected at the best guest houses with free WiFi in Naivasha, perfect for remote work or sharing your travel highlights.",
+    description: "Stay connected at the **best guest houses in Naivasha** with free WiFi, perfect for remote work or sharing your travel highlights.",
     color: "var(--color-blue)"
   },
   {
     icon: <Utensils size={24} />,
     title: "In-House Chefs",
-    description: "Enjoy gourmet meals at the best cottages with in-house chefs in Naivasha, offering personalized dining experiences.",
+    description: "Enjoy gourmet meals at our **best cottages in Naivasha** with in-house chefs, offering personalized dining experiences in Nakuru County.",
     color: "var(--color-orange)"
   },
   {
     icon: <Sparkles size={24} />,
     title: "Unmatched Cleanliness",
-    description: "We pride ourselves on being the cleanest guest houses in Naivasha, ensuring a safe and hygienic environment for all our guests.",
+    description: "We pride ourselves on having the **cleanest guest houses in Naivasha**, ensuring a safe and hygienic environment for all our visitors.",
     color: "var(--color-green)"
   },
   {
     icon: <Mountain size={24} />,
     title: "Scenic Mountain Views",
-    description: "Wake up to breathtaking landscapes at the most scenic cottages in Naivasha, located right near Hell's Gate and Lake Naivasha.",
+    description: "Wake up to breathtaking landscapes at the most scenic **Naivasha holiday homes**, located right near Hell's Gate and Lake Naivasha.",
     color: "var(--color-purple)"
   },
   {
     icon: <Car size={24} />,
     title: "Secure On-Site Parking",
-    description: "Travel with peace of mind with our secure parking in Naivasha, available 24/7 for all our residents.",
+    description: "Travel with peace of mind with our secure parking at the **best guest accommodation in Naivasha**, available 24/7.",
     color: "var(--color-teal)"
   },
   {
     icon: <Crown size={24} />,
     title: "Premium Experience",
-    description: "Experience luxury and comfort at our premium guest houses in Naivasha, tailored for the discerning traveler.",
+    description: "Experience luxury and comfort at our premium **guest houses near Hell's Gate**, tailored for the discerning world traveler.",
     color: "var(--color-yellow)"
   },
   {
     icon: <Accessibility size={24} />,
     title: "Inclusive Comfort",
-    description: "Our facilities include the best handicap accessible cottages in Naivasha, ensuring comfort and easy access for everyone.",
+    description: "Our facilities include the best handicap accessible **vacation rentals Naivasha** has to offer, ensuring comfort for everyone.",
     color: "var(--color-pink)"
   },
   {
     icon: <Map size={24} />,
     title: "Adventure Awaits",
-    description: "Explore the wild from the best guest houses near Hell's Gate, putting you right at the heart of Naivasha's adventures.",
+    description: "Explore the wild from the **best guest rooms in Naivasha**, putting you right at the heart of Nakuru County adventures.",
     color: "var(--color-red)"
   },
   {
     icon: <Headphones size={24} />,
     title: "Dedicated Support",
-    description: "We are guest houses with the best support in Naivasha, ready to assist with WRC bookings and local activity planning.",
+    description: "We offer **accommodation guest houses in Naivasha** with the best support, ready to assist with WRC bookings and local planning.",
     color: "var(--color-cyan)"
   }
 ];
@@ -74,7 +75,7 @@ export default function Home() {
         >
           <h1>Discover Serenity in Naivasha</h1>
           <p>
-            Experience the best cottages and guest houses near Hell&apos;s Gate.
+            Experience the **best guest houses in Naivasha** near Hell&apos;s Gate.
             A perfect blend of nature, comfort, and premium hospitality for your ultimate **staycation in Naivasha**.
           </p>
           <div className={styles.propertiesGrid}>
@@ -90,7 +91,7 @@ export default function Home() {
                 </div>
                 <div className={styles.cardContent}>
                   <h3>Jazby Guest House</h3>
-                  <p>Top-rated comfort, exceptional value, and right near nature. One of the premier **vacation rentals Naivasha** has to offer to beat the **WRC Safari Rally Kenya** prices.</p>
+                  <p>Top-rated comfort and **very affordable guest rooms in Naivasha**. One of the premier **vacation rentals Naivasha** has to offer near the lake.</p>
                   <span className={styles.cardLink}>Explore &rarr;</span>
                 </div>
               </Link>
@@ -108,7 +109,7 @@ export default function Home() {
                 </div>
                 <div className={styles.cardContent}>
                   <h3>Wild Wood Cottages</h3>
-                  <p>A serene nature retreat with mountain views, perfect for a self-catering getaway in one of the best **Naivasha holiday homes**.</p>
+                  <p>A serene nature retreat and some of the **best cottages in Naivasha**, perfect for a self-catering getaway in premium **Naivasha holiday homes**.</p>
                   <span className={styles.cardLink}>Explore &rarr;</span>
                 </div>
               </Link>
@@ -127,7 +128,7 @@ export default function Home() {
             className={styles.amenitiesHeader}
           >
             <h2>World-Class Amenities</h2>
-            <p>Thoughtfully curated facilities to ensure your stay is comfortable and memorable.</p>
+            <p>Providing the **best guest accommodation in Naivasha** with thoughtfully curated facilities to ensure your stay is memorable.</p>
           </motion.div>
 
           <div className={styles.amenityGrid}>
@@ -152,10 +153,12 @@ export default function Home() {
         </div>
       </section>
 
+      <ReviewsSection isFeatured />
+
       <section className={styles.ctaSection}>
         <div className={`container ${styles.ctaContent}`}>
           <h2>Ready for your escape?</h2>
-          <p>Book your stay at the best guest houses and cottages in Naivasha with the best support team, and experience the ultimate relaxation.</p>
+          <p>Book your stay at the **best guest houses and cottages in Naivasha** today. Experience the ultimate relaxation in our premium **Naivasha holiday homes**.</p>
           <Link href="/contact" className={styles.ctaButton}>
             <Phone size={20} />
             Contact Us
