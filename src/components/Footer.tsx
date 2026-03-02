@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -6,6 +7,7 @@ export default function Footer() {
         <footer className={styles.footer}>
             <div className={`container ${styles.footerGrid}`}>
                 <div className={styles.brand}>
+                    <Image src="/logos/wildwood-escapes-no-bg.png" alt="Wild Wood Escapes Logo" width={80} height={80} className={styles.logoImage} />
                     <h2>Wild Wood Escapes</h2>
                     <p>Serene stays in Naivasha. Experience nature, comfort, and premium hospitality near Hell&apos;s Gate and beyond.</p>
                 </div>
@@ -13,6 +15,7 @@ export default function Footer() {
                     <h3>Properties</h3>
                     <Link href="/jazby-guest-house">Jazby Guest House</Link>
                     <Link href="/wild-wood-cottages">Wild Wood Cottages</Link>
+                    <Link href="/luna-lights-guest-house">Luna Lights Guest House</Link>
                 </div>
                 <div className={styles.links}>
                     <h3>Discover</h3>
