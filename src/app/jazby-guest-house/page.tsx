@@ -13,26 +13,31 @@ const JAZBY_LOGO = "/logos/jazby/jazby-1-no-bg.png";
 
 const JAZBY_SECTIONS = [
     {
+        id: "living-room",
         title: "The Living Room",
         description: "Relax in our spacious, well-lit living area, designed to be one of the best guest rooms in Naivasha for comfort and style. Outfitted with plush seating and a flat-screen TV, it offers a warm ambiance perfect for unwinding after a day of adventure in Nakuru County.",
         images: jazbyImages["living-room"]
     },
     {
+        id: "kitchen",
         title: "The Kitchen",
         description: "Our fully equipped shared kitchen allows you to embrace the freedom of self-catering during your stay at our guest houses in Naivasha. Features modern appliances and ample counter space, ideal for preparing meals after exploring Hell's Gate.",
         images: jazbyImages["kitchen"]
     },
     {
+        id: "bedroom",
         title: "The Bedroom",
         description: "Rest easy in our plush rooms, offering some of the best guest accommodation in Naivasha. Each bedroom is designed for maximum tranquility with premium linens and soundproofing to ensure a peaceful night in the heart of Nakuru County.",
         images: jazbyImages["bedroom"]
     },
     {
+        id: "bathroom",
         title: "The Bathroom",
         description: "Experience modern elegance in our clean, private bathrooms. Featuring walk-in showers and premium toiletries, they provide a refreshing touch to your pristine getaway in Naivasha.",
         images: jazbyImages["bathroom"]
     },
     {
+        id: "exterior",
         title: "The Exterior",
         description: "Step outside to enjoy our outdoor fireplace and serene atmosphere. Take in the crisp Naivasha air where you might spot local wildlife, making Jazby one of the most sought-after guest houses in Naivasha for a nature retreat.",
         images: jazbyImages["exterior"]
@@ -80,7 +85,7 @@ export default function JazbyPage() {
                 <ReviewsSection propertyName="Jazby Guest House" />
             </main>
 
-            <section ref={bookingRef} className={styles.bookingSection}>
+            <section id="booking" ref={bookingRef} className={styles.bookingSection}>
                 <div className={`container ${styles.bookingContainer}`}>
                     <div className={styles.bookingInfo}>
                         <h2>Reserve Your Stay</h2>

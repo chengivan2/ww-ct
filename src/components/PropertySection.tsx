@@ -14,6 +14,7 @@ interface CloudinaryImage {
 }
 
 interface RoomSection {
+    id?: string;
     title: string;
     description: string;
     images: CloudinaryImage[];
@@ -31,7 +32,7 @@ export default function PropertySection({ sections }: PropertySectionProps) {
                 const isTextLeft = index % 2 === 0;
 
                 return (
-                    <div key={index} className={`${styles.sectionRow} ${!isTextLeft ? styles.rowReverse : ''}`}>
+                    <div key={index} id={section.id} className={`${styles.sectionRow} ${!isTextLeft ? styles.rowReverse : ''}`}>
                         {/* Sticky Text Side */}
                         <div className={styles.textColumn}>
                             <div className={`${styles.stickyText} ${!isTextLeft ? styles.stickyRight : ''}`}>

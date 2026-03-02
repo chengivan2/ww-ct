@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { reviews } from '@/data/reviews';
+import { reviews, Review } from '@/data/reviews';
 import ReviewCard from './ReviewCard';
 import styles from './ReviewsSection.module.css';
 
@@ -11,7 +11,7 @@ interface ReviewsSectionProps {
 }
 
 const ReviewsSection: React.FC<ReviewsSectionProps> = ({ propertyName, isFeatured }) => {
-    let propertyReviews = [];
+    let propertyReviews: Review[] = [];
 
     if (isFeatured) {
         // Take 2 top reviews from each property
@@ -25,7 +25,7 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ propertyName, isFeature
     if (propertyReviews.length === 0) return null;
 
     return (
-        <section className={styles.section}>
+        <section id="reviews" className={styles.section}>
             <div className="container">
                 <div className={styles.header}>
                     <motion.h2
@@ -67,9 +67,9 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ propertyName, isFeature
                     <p>Verified reviews from our verified guests.</p>
                     {isFeatured ? (
                         <div className={styles.homeLinks}>
-                            <Link href="/wild-wood-cottages" className={styles.bookingLink}>Wild Wood Reviews →</Link>
+                            <Link href="/wild-wood-cottages#reviews" className={styles.bookingLink}>Wild Wood Reviews →</Link>
                             <span className={styles.divider}>|</span>
-                            <Link href="/jazby-guest-house" className={styles.bookingLink}>Jazby Reviews →</Link>
+                            <Link href="/jazby-guest-house#reviews" className={styles.bookingLink}>Jazby Reviews →</Link>
                         </div>
                     ) : (
                         <a

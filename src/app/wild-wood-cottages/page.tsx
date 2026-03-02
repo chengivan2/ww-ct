@@ -13,26 +13,31 @@ const WILDWOOD_LOGO = "/logos/wildwood-cottages/wildwood-cottages-no-bg.png";
 
 const WILDWOOD_SECTIONS = [
     {
+        id: "living-room",
         title: "The Living Room",
         description: "A haven of peace in our cottages in Naivasha. The seating area is equipped with a cozy sofa and soundproofing for total quiet, with large windows that invite the natural Nakuru County sunlight in for a perfect nature retreat.",
         images: wildwoodImages["living-room"]
     },
     {
+        id: "kitchen",
         title: "The Kitchen",
         description: "Embrace the freedom of self-catering in one of the best cottages in Naivasha. Our kitchenette features modern tools to cook up a storm in your private sanctuary after a day of exploring Crescent Island or Hell's Gate.",
         images: wildwoodImages["kitchen"]
     },
     {
+        id: "bedroom",
         title: "The Bedroom",
         description: "Wake up to breathtaking mountain and lake views in our premium nature retreat. These bedrooms offer a rustic feel with comfortable bedding, ensuring you are refreshed for your next Naivasha adventure.",
         images: wildwoodImages["bedroom"]
     },
     {
+        id: "bathroom",
         title: "The Bathroom",
         description: "Our private, spotless bathrooms are designed to complement your pristine getaway. Equipped with soothing showers and fresh towels, they provide the luxury you expect from the best cottages in Naivasha.",
         images: wildwoodImages["bathroom"]
     },
     {
+        id: "exterior",
         title: "The Exterior",
         description: "Step out into nature at one of the most accessible nature retreats in Nakuru County. Our ground floor units offer immediate access to the outdoors where you can marvel at the Naivasha landscape and nearby wildlife.",
         images: wildwoodImages["exterior"]
@@ -57,7 +62,7 @@ export default function WildWoodPage() {
                                 <Image src={WILDWOOD_LOGO} alt="Wild Wood Logo" width={220} height={80} className={styles.headerLogo} />
                             </div>
                         </div>
-                        <p>Discover the best **self-catering cottages in Naivasha** and **luxury cottages Lake Naivasha** has to offer. Wild Wood Cottages offers a serene nature retreat perfectly positioned near Hell&apos;s Gate, featuring highly accessible suites and breathtaking views.</p>
+                        <p>Discover the best self-catering cottages in Naivasha and luxury cottages Lake Naivasha has to offer. Wild Wood Cottages offers a serene nature retreat perfectly positioned near Hell&apos;s Gate, featuring highly accessible suites and breathtaking views.</p>
                     </div>
                     <div className={styles.headerAmenities}>
                         <div className={styles.amenity}><Home size={20} /> <span>Apartments</span></div>
@@ -80,7 +85,7 @@ export default function WildWoodPage() {
                 <ReviewsSection propertyName="Wild Wood Cottages" />
             </main>
 
-            <section ref={bookingRef} className={styles.bookingSection}>
+            <section id="booking" ref={bookingRef} className={styles.bookingSection}>
                 <div className={`container ${styles.bookingContainer}`}>
                     <div className={styles.bookingInfo}>
                         <h2>Plan Your Escape</h2>
