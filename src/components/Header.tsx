@@ -44,7 +44,7 @@ export default function Header() {
     return (
         <header className={`${styles.header} ${scrolled ? styles.scrolled : ''} ${isMenuOpen ? styles.menuOpen : ''}`}>
             <div className={`container ${styles.navContainer}`}>
-                <Link href="/" className={styles.logo} onClick={closeMenu}>
+                <Link href="/" className={styles.logo} onClick={closeMenu} aria-label="Wild Wood Escapes - Home">
                     <Image src="/logos/wildwood-escapes-no-bg.png" alt="Wild Wood Escapes Logo" width={80} height={80} className={styles.logoImage} />
                     <span>Wild Wood Escapes</span>
                 </Link>

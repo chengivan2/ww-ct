@@ -92,7 +92,7 @@ export default function Home() {
                 <div className={styles.cardContent}>
                   <h3>Jazby Guest House</h3>
                   <p>Top-rated comfort and very affordable guest rooms in Naivasha. One of the premier vacation rentals Naivasha has to offer near the lake.</p>
-                  <span className={styles.cardLink}>Explore &rarr;</span>
+                  <span className={styles.cardLink}>Explore Jazby Guest House details &rarr;</span>
                 </div>
               </Link>
             </motion.div>
@@ -110,7 +110,7 @@ export default function Home() {
                 <div className={styles.cardContent}>
                   <h3>Wild Wood Cottages</h3>
                   <p>A serene nature retreat and some of the best cottages in Naivasha, perfect for a self-catering getaway in premium Naivasha holiday homes.</p>
-                  <span className={styles.cardLink}>Explore &rarr;</span>
+                  <span className={styles.cardLink}>Explore Wild Wood Cottages details &rarr;</span>
                 </div>
               </Link>
             </motion.div>

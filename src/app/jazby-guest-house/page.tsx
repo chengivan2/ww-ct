@@ -81,7 +81,7 @@ export default function JazbyPage() {
             </header>
 
             <main>
-                <PropertySection sections={JAZBY_SECTIONS} />
+                <PropertySection sections={JAZBY_SECTIONS} propertyName="Jazby Guest House" />
                 <ReviewsSection propertyName="Jazby Guest House" />
             </main>
 

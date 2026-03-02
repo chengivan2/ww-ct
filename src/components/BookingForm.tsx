@@ -70,7 +70,7 @@ export default function BookingForm({
 
     if (status === 'success') {
         return (
-            <div className={styles.successMessage}>
+            <div className={styles.successMessage} aria-live="polite">
                 <h3>{successTitle || 'Request Sent Successfully!'}</h3>
                 <p>{successMessage || 'Thank you for your enquiry. We will get back to you with availability and rates via email very soon.'}</p>
                 <button onClick={() => setStatus('idle')} className="btn-primary mt-4">Send Another</button>
@@ -95,7 +95,7 @@ export default function BookingForm({
                 <label htmlFor="name" className={styles.label}>Full Name</label>
                 <div className={styles.inputWrapper}>
                     <User size={18} className={styles.inputIcon} />
-                    <input type="text" id="name" name="name" required placeholder="John Doe" className={styles.inputField} />
+                    <input type="text" id="name" name="name" required aria-required="true" placeholder="John Doe" className={styles.inputField} />
                 </div>
             </div>
 
@@ -103,7 +103,7 @@ export default function BookingForm({
                 <label htmlFor="email" className={styles.label}>Email Address</label>
                 <div className={styles.inputWrapper}>
                     <Mail size={18} className={styles.inputIcon} />
-                    <input type="email" id="email" name="email" required placeholder="john@example.com" className={styles.inputField} />
+                    <input type="email" id="email" name="email" required aria-required="true" placeholder="john@example.com" className={styles.inputField} />
                 </div>
             </div>
 
@@ -177,7 +177,7 @@ export default function BookingForm({
             </button>
 
             {status === 'error' && (
-                <p className={styles.errorMessage}>There was an error sending your request. Please try again or email us directly.</p>
+                <p className={styles.errorMessage} aria-live="assertive">There was an error sending your request. Please try again or email us directly.</p>
             )}
         </form>
     );

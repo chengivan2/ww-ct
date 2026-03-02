@@ -22,9 +22,10 @@ interface RoomSection {
 
 interface PropertySectionProps {
     sections: RoomSection[];
+    propertyName: string;
 }
 
-export default function PropertySection({ sections }: PropertySectionProps) {
+export default function PropertySection({ sections, propertyName }: PropertySectionProps) {
     return (
         <div className={styles.propertyContainer}>
             {sections.map((section, index) => {
@@ -72,7 +73,7 @@ export default function PropertySection({ sections }: PropertySectionProps) {
                                     >
                                         <Image
                                             src={img.url}
-                                            alt={`${section.title} view ${imgIndex + 1}`}
+                                            alt={`${section.title} at ${propertyName} in Naivasha - Image ${imgIndex + 1}`}
                                             width={img.width}
                                             height={img.height}
                                             className={styles.propertyImage}

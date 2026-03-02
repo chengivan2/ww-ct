@@ -81,7 +81,7 @@ export default function WildWoodPage() {
             </header>
 
             <main>
-                <PropertySection sections={WILDWOOD_SECTIONS} />
+                <PropertySection sections={WILDWOOD_SECTIONS} propertyName="Wild Wood Cottages" />
                 <ReviewsSection propertyName="Wild Wood Cottages" />
             </main>
 

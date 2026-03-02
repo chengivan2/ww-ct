@@ -25,7 +25,7 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ propertyName, isFeature
     if (propertyReviews.length === 0) return null;
 
     return (
-        <section id="reviews" className={styles.section}>
+        <section id="reviews" className={styles.section} aria-label="Guest Reviews">
             <div className="container">
                 <div className={styles.header}>
                     <motion.h2
