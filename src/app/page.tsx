@@ -148,7 +148,7 @@ export default function Home() {
                 <Leaf size={16} />
                 <span>Sustainable Hospitality</span>
               </div>
-              <h2>Eco-Friendly Practices at Our Naivasha Nature Retreats</h2>
+              <h2>Eco-Friendly Practices at Our Naivasha Guest Houses and Cottages</h2>
               <p>
                 At Wild Wood Escapes, we believe in preserving the beauty of Nakuru County for generations to come.
                 Our lush green compound at Wild Wood Cottages is more than just a scenic backdrop; it&apos;s a testament

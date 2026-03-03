@@ -233,9 +233,12 @@
     font-weight: 800;
     margin-bottom: 2rem;
     line-height: 1.2;
-    background: linear-gradient(135deg, var(--foreground) 0%, var(--color-green) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--foreground);
+}
+
+.ecoText h2 strong {
+    color: var(--color-green);
+    font-weight: 800;
 }
 
 .ecoText p {
