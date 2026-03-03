@@ -213,21 +213,78 @@
     align-items: center;
 }
 
-.ecoImageWrapper {
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+.ecoImageGroup {
+    position: relative;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
 }
 
-.ecoImage {
+.mainImageWrapper {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+    position: relative;
+    z-index: 1;
+}
+
+.ecoImageMain {
     width: 100%;
     height: auto;
     display: block;
     transition: transform 0.8s ease;
 }
 
-.ecoImageWrapper:hover .ecoImage {
-    transform: scale(1.05);
+.ecoImageGroup:hover .ecoImageMain {
+    transform: scale(1.02);
+}
+
+.floatingImageWrapper {
+    position: absolute;
+    bottom: -2rem;
+    right: -2rem;
+    width: 55%;
+    z-index: 2;
+    border-radius: 20px;
+    padding: 0.5rem;
+    background: var(--background);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.15);
+}
+
+.ecoImageFloating {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+}
+
+.imageCaption {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    .imageCaption {
+        background: rgba(17, 17, 17, 0.95);
+    }
+}
+
+.imageCaption strong {
+    font-size: 1rem;
+    color: var(--foreground);
+    line-height: 1.2;
+}
+
+.imageCaption span {
+    font-size: 0.8rem;
+    color: var(--color-green);
+    font-weight: 700;
 }
 
 .ecoText {

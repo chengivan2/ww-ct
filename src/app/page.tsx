@@ -129,47 +129,73 @@ export default function Home() {
         <div className="container">
           <div className={styles.ecoContent}>
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
+              initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className={styles.ecoImageWrapper}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className={styles.ecoImageGroup}
             >
-              <Image
-                src="https://res.cloudinary.com/dikq4no6r/image/upload/v1772337457/Silv-4164_cyfr22.jpg"
-                alt="Lush green compound at Wild Wood Cottages in Naivasha"
-                width={800}
-                height={600}
-                className={styles.ecoImage}
-              />
+              <div className={styles.mainImageWrapper}>
+                <Image
+                  src="https://res.cloudinary.com/dikq4no6r/image/upload/v1772337457/Silv-4164_cyfr22.jpg"
+                  alt="Lush green compound at Wild Wood Cottages"
+                  width={700}
+                  height={500}
+                  className={styles.ecoImageMain}
+                />
+              </div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8, x: 50 }}
+                whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.4, ease: "backOut" }}
+                className={styles.floatingImageWrapper}
+              >
+                <Image
+                  src="https://res.cloudinary.com/dikq4no6r/image/upload/v1772562319/mary-kiragu-eco-tourism-img-1_r1sth7.jpg"
+                  alt="Mary Kiragu at Ecomondo Tech Expo 2025"
+                  width={400}
+                  height={500}
+                  className={styles.ecoImageFloating}
+                />
+                <div className={styles.imageCaption}>
+                  <strong>Mary Kiragu</strong>
+                  <span>Founder & Director</span>
+                </div>
+              </motion.div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className={styles.ecoText}
             >
               <div className={styles.ecoTag}>
                 <Leaf size={16} />
-                <span>Sustainable Hospitality</span>
+                <span>Global Eco-Tourism & Circular Hospitality</span>
               </div>
-              <h2>Eco-Friendly Practices at Our Naivasha Guest Houses and Cottages</h2>
+              <h2>Pioneering <strong>Sustainable Hospitality</strong> on the Global Stage</h2>
               <p>
-                At Wild Wood Escapes, we believe in preserving the beauty of Nakuru County for generations to come.
-                Our lush green compound at Wild Wood Cottages is more than just a scenic backdrop; it&apos;s a testament
-                to our dedication to sustainable hospitality.
+                From rural Kenya to the international stage at <strong>Ecomondo Tech Expo 2025 in Italy</strong>,
+                Wild Wood Escapes is making global waves in eco-tourism. Our founder, Mary Kiragu, recently
+                showcased our little eco-lodge as a living model of circular hospitality and bioeconomy innovation.
               </p>
               <p>
-                As part of the best cottages in Naivasha, we implement eco-friendly practices across all our
-                properties to ensure your staycation in Naivasha remains a pristine nature retreat.
-                From energy conservation to responsible water management, our goal is to provide the
-                cleanest guest houses in Naivasha while minimizing our environmental footprint near Hell&apos;s Gate.
+                What began as an experiment in building premium nature retreats from recycled waste containers
+                has evolved into some of the best guest houses in Naivasha. We&apos;ve proven that sustainable
+                hospitality can be both profitable and world-class, combining luxury with a deep respect for
+                the environment near Hell&apos;s Gate.
+              </p>
+              <p>
+                Today, our mission expands beyond Nakuru County. As we grow, we remain rooted in the practices
+                that define us: cooking on solar, harvesting rainwater, and growing our own organic food,
+                proving that small ideas rooted in purpose can travel the world.
               </p>
               <ul className={styles.ecoList}>
-                <li>Green landscaping and biodiversity preservation</li>
-                <li>Sustainable waste management across properties</li>
-                <li>Energy-efficient lighting and appliances</li>
+                <li>Circular hospitality: Upcycled container architecture</li>
+                <li>100% solar cooking and renewable energy integration</li>
+                <li>Rainwater harvesting and organic farm-to-table dining</li>
               </ul>
             </motion.div>
           </div>
