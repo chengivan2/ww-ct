@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { Leaf } from 'lucide-react';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -8,7 +9,10 @@ export default function Footer() {
             <div className={`container ${styles.footerGrid}`}>
                 <div className={styles.brand}>
                     <Image src="/logos/wildwood-escapes-no-bg.png" alt="Wild Wood Escapes Logo" width={80} height={80} className={styles.logoImage} />
-                    <h2>Wild Wood Escapes</h2>
+                    <div className={styles.brandTitleContainer}>
+                        <h2>Wild Wood Escapes</h2>
+                        <span className={styles.ecoBadge}><Leaf size={14} /> Eco-Friendly</span>
+                    </div>
                     <p>Serene stays in Naivasha. Experience nature, comfort, and premium hospitality near Hell&apos;s Gate and beyond.</p>
                 </div>
                 <div className={styles.links}>

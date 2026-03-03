@@ -88,7 +88,10 @@ export default function Home() {
             >
               <Link href="/jazby-guest-house" className={styles.propertyCard}>
                 <div className={styles.cardImagePlaceholder}>
-                  <span className={styles.badge}>Guest House</span>
+                  <div className={styles.badgeContainer}>
+                    <span className={styles.badge}>Guest House</span>
+                    <span className={styles.ecoBadge}><Leaf size={14} /> Eco-Friendly</span>
+                  </div>
                 </div>
                 <div className={styles.cardContent}>
                   <h3>Jazby Guest House</h3>
@@ -106,7 +109,10 @@ export default function Home() {
             >
               <Link href="/wild-wood-cottages" className={styles.propertyCard}>
                 <div className={styles.cardImagePlaceholderDark}>
-                  <span className={styles.badge}>Cottages</span>
+                  <div className={styles.badgeContainer}>
+                    <span className={styles.badge}>Cottages</span>
+                    <span className={styles.ecoBadge}><Leaf size={14} /> Eco-Friendly</span>
+                  </div>
                 </div>
                 <div className={styles.cardContent}>
                   <h3>Wild Wood Cottages</h3>

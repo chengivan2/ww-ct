@@ -6,7 +6,7 @@ import PropertySection from '@/components/PropertySection';
 import BookingForm from '@/components/BookingForm';
 import ReviewsSection from '@/components/ReviewsSection';
 import jazbyImages from '@/data/jazby-images.json';
-import { Home, ConciergeBell, Users, Car, Wifi, Bath, Wind, Mountain, ShowerHead, Utensils } from 'lucide-react';
+import { Home, ConciergeBell, Users, Car, Wifi, Bath, Wind, Mountain, ShowerHead, Utensils, Leaf } from 'lucide-react';
 import styles from './page.module.css';
 
 const JAZBY_LOGO = "/logos/jazby/jazby-1-no-bg.png";
@@ -57,7 +57,10 @@ export default function JazbyPage() {
                 <div className={`container ${styles.headerContent}`}>
                     <div className={styles.headerText}>
                         <div className={styles.titleWrapper}>
-                            <h1>Jazby Guest House: Best Guest Accommodation in Naivasha</h1>
+                            <div className={styles.titleBadgeContainer}>
+                                <h1>Jazby Guest House: Best Guest Accommodation in Naivasha</h1>
+                                <span className={styles.ecoBadge}><Leaf size={16} /> Eco-Friendly Guest House</span>
+                            </div>
                             <div className={styles.propertyLogo}>
                                 <Image src={JAZBY_LOGO} alt="Jazby Logo" width={180} height={70} className={styles.headerLogo} />
                             </div>

@@ -6,7 +6,7 @@ import PropertySection from '@/components/PropertySection';
 import BookingForm from '@/components/BookingForm';
 import ReviewsSection from '@/components/ReviewsSection';
 import wildwoodImages from '@/data/wildwood-images.json';
-import { Home, ConciergeBell, Users, Car, Wifi, Bath, Wind, Mountain, ShowerHead, Utensils } from 'lucide-react';
+import { Home, ConciergeBell, Users, Car, Wifi, Bath, Wind, Mountain, ShowerHead, Utensils, Leaf } from 'lucide-react';
 import styles from './page.module.css';
 
 const WILDWOOD_LOGO = "/logos/wildwood-cottages/wildwood-cottages-no-bg.png";
@@ -57,7 +57,10 @@ export default function WildWoodPage() {
                 <div className={`container ${styles.headerContent}`}>
                     <div className={styles.headerText}>
                         <div className={styles.titleWrapper}>
-                            <h1>Wild Wood Cottages: Best Self-Catering Cottages in Naivasha</h1>
+                            <div className={styles.titleBadgeContainer}>
+                                <h1>Wild Wood Cottages: Best Self-Catering Cottages in Naivasha</h1>
+                                <span className={styles.ecoBadge}><Leaf size={16} /> Eco-Friendly Nature Retreat</span>
+                            </div>
                             <div className={styles.propertyLogo}>
                                 <Image src={WILDWOOD_LOGO} alt="Wild Wood Logo" width={220} height={80} className={styles.headerLogo} />
                             </div>
