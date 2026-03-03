@@ -37,8 +37,8 @@ export default function LunaLightsPage() {
             <header className={styles.pageHeader}>
                 <div className={`container ${styles.headerContent}`}>
                     <div className={styles.headerText}>
-                        <h1>Luna Lights Guest House</h1>
-                        <p>Experience comfort and convenience at **Luna Lights Guest House**, offering some of the most **very affordable guest rooms in Naivasha**. Whether you&apos;re visiting for business or leisure, our guest house provides a welcoming stay in the heart of Nakuru County.</p>
+                        <h1>Luna Light Guest House</h1>
+                        <p>Experience comfort and convenience at Luna Light Guest House, offering some of the most very affordable guest rooms in Naivasha. Whether you&apos;re visiting for business or leisure, our guest house provides a welcoming stay in the heart of Nakuru County.</p>
                     </div>
                     <div className={styles.headerAmenities}>
                         <div className={styles.amenity}><Home size={20} /> <span>Guest House</span></div>
@@ -55,14 +55,14 @@ export default function LunaLightsPage() {
             </header>
 
             <main>
-                <PropertySection sections={LUNA_LIGHTS_SECTIONS} />
+                <PropertySection sections={LUNA_LIGHTS_SECTIONS} propertyName="Luna Light Guest House" />
             </main>
 
             <section ref={bookingRef} className={styles.bookingSection}>
                 <div className={`container ${styles.bookingContainer}`}>
                     <div className={styles.bookingInfo}>
                         <h2>Affordable Stay in Naivasha</h2>
-                        <p>Looking for a budget-friendly and comfortable place to stay? Luna Lights Guest House is your best choice for **very affordable guest rooms in Naivasha**. Contact us today to book your room.</p>
+                        <p>Looking for a budget-friendly and comfortable place to stay? Luna Light Guest House is your best choice for very affordable guest rooms in Naivasha. Contact us today to book your room.</p>
                         <ul className={styles.bookingHighlights}>
                             <li>✓ Unbeatable affordability</li>
                             <li>✓ Central Naivasha location</li>
@@ -72,10 +72,10 @@ export default function LunaLightsPage() {
                     <div className={styles.formWrapper}>
                         <Suspense fallback={<div className={styles.formLoading}>Loading form...</div>}>
                             <BookingForm
-                                defaultProperty="Luna Lights Guest House"
+                                defaultProperty="Luna Light Guest House"
                                 successTitle="Booking Enquiry Received!"
                                 successMessage="Thank you for enquiring about our affordable rooms in Naivasha. We've received your request and will get back to you shortly to confirm availability."
-                                propertyName="Luna Lights Guest House"
+                                propertyName="Luna Light Guest House"
                             />
                         </Suspense>
                     </div>

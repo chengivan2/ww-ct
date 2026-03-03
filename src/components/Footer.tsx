@@ -19,7 +19,7 @@ export default function Footer() {
                     <h3>Properties</h3>
                     <Link href="/jazby-guest-house">Jazby Guest House</Link>
                     <Link href="/wild-wood-cottages">Wild Wood Cottages</Link>
-                    <Link href="/luna-lights-guest-house">Luna Lights Guest House</Link>
+                    <Link href="/luna-lights-guest-house">Luna Light Guest House</Link>
                 </div>
                 <div className={styles.links}>
                     <h3>Discover</h3>
