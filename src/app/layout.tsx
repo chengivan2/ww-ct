@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Familjen_Grotesk } from "next/font/google";
-import Script from "next/script";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -63,26 +63,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-644NT2K92T"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-644NT2K92T');
-          `}
-        </Script>
-      </head>
       <body className={`${bricolage.variable} ${familjen.variable}`}>
         <Header />
         <main>{children}</main>
         <Footer />
         <WhatsAppButton />
       </body>
+      <GoogleAnalytics gaId="G-644NT2K92T" />
     </html>
   );
 }
