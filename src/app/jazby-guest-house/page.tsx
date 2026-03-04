@@ -66,20 +66,32 @@ export default function JazbyPage() {
                             </div>
                         </div>
                         <p>Discover the best guest rooms near Nakuru and full accommodation guest houses in Naivasha. Jazby Guest House offers premium comfort, exceptional value, and free WiFi, perfectly positioned for your serene stay near Hell&apos;s Gate.</p>
+
+                        <div className={styles.headerAmenities}>
+                            <div className={styles.amenity}><Home size={18} /> <span>Apartments</span></div>
+                            <div className={styles.amenity}><ConciergeBell size={18} /> <span>Room service</span></div>
+                            <div className={styles.amenity}><Users size={18} /> <span>Family rooms</span></div>
+                            <div className={styles.amenity}><Car size={18} /> <span>Free on-site parking</span></div>
+                            <div className={styles.amenity}><Wifi size={18} /> <span>Free Wifi (In all areas • 24 Mbps)</span></div>
+                            <div className={styles.amenity}><Bath size={18} /> <span>Private bathroom</span></div>
+                            <div className={styles.amenity}><Wind size={18} /> <span>Balcony</span></div>
+                            <div className={styles.amenity}><Mountain size={18} /> <span>View</span></div>
+                            <div className={styles.amenity}><ShowerHead size={18} /> <span>Shower</span></div>
+                            <div className={styles.amenity}><Utensils size={18} /> <span>Kitchenette</span></div>
+                        </div>
+
+                        <button onClick={scrollToBooking} className="btn-primary">Reserve Jazby Now</button>
                     </div>
-                    <div className={styles.headerAmenities}>
-                        <div className={styles.amenity}><Home size={20} /> <span>Apartments</span></div>
-                        <div className={styles.amenity}><ConciergeBell size={20} /> <span>Room service</span></div>
-                        <div className={styles.amenity}><Users size={20} /> <span>Family rooms</span></div>
-                        <div className={styles.amenity}><Car size={20} /> <span>Free on-site parking</span></div>
-                        <div className={styles.amenity}><Wifi size={20} /> <span>Free Wifi (In all areas • 24 Mbps)</span></div>
-                        <div className={styles.amenity}><Bath size={20} /> <span>Private bathroom</span></div>
-                        <div className={styles.amenity}><Wind size={20} /> <span>Balcony</span></div>
-                        <div className={styles.amenity}><Mountain size={20} /> <span>View</span></div>
-                        <div className={styles.amenity}><ShowerHead size={20} /> <span>Shower</span></div>
-                        <div className={styles.amenity}><Utensils size={20} /> <span>Kitchenette</span></div>
+
+                    <div className={styles.heroImageWrapper}>
+                        <Image
+                            src="https://res.cloudinary.com/dikq4no6r/image/upload/v1772343101/Silv-3891_gh9wum.jpg"
+                            alt="Jazby Guest House Exterior"
+                            fill
+                            priority
+                            className={styles.heroImage}
+                        />
                     </div>
-                    <button onClick={scrollToBooking} className="btn-primary">Reserve Jazby Now</button>
                 </div>
             </header>
 

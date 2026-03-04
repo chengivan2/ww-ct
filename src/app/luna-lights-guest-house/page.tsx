@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, Suspense } from 'react';
+import Image from 'next/image';
 import PropertySection from '@/components/PropertySection';
 import BookingForm from '@/components/BookingForm';
 import lunaLightsImages from '@/data/luna-lights-images.json';
@@ -39,18 +40,30 @@ export default function LunaLightsPage() {
                     <div className={styles.headerText}>
                         <h1>Luna Light Guest House</h1>
                         <p>Experience comfort and convenience at Luna Light Guest House, offering some of the most very affordable guest rooms in Naivasha. Whether you&apos;re visiting for business or leisure, our guest house provides a welcoming stay in the heart of Nakuru County.</p>
+
+                        <div className={styles.headerAmenities}>
+                            <div className={styles.amenity}><Home size={18} /> <span>Guest House</span></div>
+                            <div className={styles.amenity}><Users size={18} /> <span>Comfortable Rooms</span></div>
+                            <div className={styles.amenity}><Car size={18} /> <span>Parking Available</span></div>
+                            <div className={styles.amenity}><Wifi size={18} /> <span>Wifi Access</span></div>
+                            <div className={styles.amenity}><Bath size={18} /> <span>Private Bathroom</span></div>
+                            <div className={styles.amenity}><Mountain size={18} /> <span>Local Views</span></div>
+                            <div className={styles.amenity}><ShowerHead size={18} /> <span>Hot Shower</span></div>
+                            <div className={styles.amenity}><ConciergeBell size={18} /> <span>Friendly Service</span></div>
+                        </div>
+
+                        <button onClick={scrollToBooking} className="btn-primary">Book Luna Light Now</button>
                     </div>
-                    <div className={styles.headerAmenities}>
-                        <div className={styles.amenity}><Home size={20} /> <span>Guest House</span></div>
-                        <div className={styles.amenity}><Users size={20} /> <span>Comfortable Rooms</span></div>
-                        <div className={styles.amenity}><Car size={20} /> <span>Parking Available</span></div>
-                        <div className={styles.amenity}><Wifi size={20} /> <span>Wifi Access</span></div>
-                        <div className={styles.amenity}><Bath size={20} /> <span>Private Bathroom</span></div>
-                        <div className={styles.amenity}><Mountain size={20} /> <span>Local Views</span></div>
-                        <div className={styles.amenity}><ShowerHead size={20} /> <span>Hot Shower</span></div>
-                        <div className={styles.amenity}><ConciergeBell size={20} /> <span>Friendly Service</span></div>
+
+                    <div className={styles.heroImageWrapper}>
+                        <Image
+                            src="https://res.cloudinary.com/dikq4no6r/image/upload/v1772454799/IMG_20250615_150252_ijlriy.jpg"
+                            alt="Luna Light Guest House Exterior"
+                            fill
+                            priority
+                            className={styles.heroImage}
+                        />
                     </div>
-                    <button onClick={scrollToBooking} className="btn-primary">Book Luna Light Now</button>
                 </div>
             </header>
 

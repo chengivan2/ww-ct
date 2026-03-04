@@ -199,20 +199,14 @@ export default function Home() {
               </div>
               <h2>Pioneering <strong>Sustainable Hospitality</strong> on the Global Stage</h2>
               <p>
-                From rural Kenya to the international stage at <strong>Ecomondo Tech Expo 2025 in Italy</strong>,
-                Wild Wood Escapes is making global waves in eco-tourism. Our founder, Mary Kiragu, recently
-                showcased our little eco-lodge as a living model of circular hospitality and bioeconomy innovation.
+                From rural Naivasha to the world stage at <strong>Ecomondo 2025 in Italy</strong>,
+                Wild Wood Escapes is pioneering circular hospitality. Our founder, Mary Kiragu,
+                has showcased our retreat as a global model of bioeconomy innovation and sustainable luxury.
               </p>
               <p>
-                What began as an experiment in building premium nature retreats from recycled waste containers
-                has evolved into some of the best guest houses in Naivasha. We&apos;ve proven that sustainable
-                hospitality can be both profitable and world-class, combining luxury with a deep respect for
-                the environment near Hell&apos;s Gate.
-              </p>
-              <p>
-                Today, our mission expands beyond Nakuru County. As we grow, we remain rooted in the practices
-                that define us: cooking on solar, harvesting rainwater, and growing our own organic food,
-                proving that small ideas rooted in purpose can travel the world.
+                What began as an experiment in upcycling has evolved into world-class nature retreats.
+                We remain rooted in the practices that define us: cooking on solar, harvesting
+                rainwater, and growing organic food, proving that purpose-driven ideas can travel the world.
               </p>
               <ul className={styles.ecoList}>
                 <li>Circular hospitality: Upcycled container architecture</li>
