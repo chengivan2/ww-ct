@@ -235,17 +235,33 @@ export default function Home() {
           {[
             {
               name: "Wild Wood Cottages",
-              images: [...wildwoodImages.exterior, ...wildwoodImages.bedroom, ...wildwoodImages.bathroom, ...wildwoodImages.living_room, ...wildwoodImages.kitchen].slice(0, 8),
+              images: [
+                ...(wildwoodImages.exterior || []),
+                ...(wildwoodImages.bedroom || []),
+                ...(wildwoodImages.bathroom || []),
+                ...(wildwoodImages['living-room'] || []),
+                ...(wildwoodImages.kitchen || [])
+              ].slice(0, 8),
               link: "/wild-wood-cottages"
             },
             {
               name: "Jazby Guest House",
-              images: [...jazbyImages.exterior, ...jazbyImages.bedroom, ...jazbyImages.bathroom, ...jazbyImages.living_room, ...jazbyImages.kitchen].slice(0, 8),
+              images: [
+                ...(jazbyImages.exterior || []),
+                ...(jazbyImages.bedroom || []),
+                ...(jazbyImages.bathroom || []),
+                ...(jazbyImages['living-room'] || []),
+                ...(jazbyImages.kitchen || [])
+              ].slice(0, 8),
               link: "/jazby-guest-house"
             },
             {
               name: "Luna Light",
-              images: [...lunaImages.exterior, ...lunaImages.bedroom, ...lunaImages.bathroom].slice(0, 8),
+              images: [
+                ...(lunaImages.exterior || []),
+                ...(lunaImages.bedroom || []),
+                ...(lunaImages.bathroom || [])
+              ].slice(0, 8),
               link: "/luna-lights-guest-house"
             }
           ].map((property, pIdx) => (
