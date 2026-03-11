@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Wifi, Utensils, Sparkles, Mountain, Car, Crown, Accessibility, Map, Headphones, Phone, Leaf, TreePine, HeartHandshake, Users } from 'lucide-react';
+import { Wifi, Utensils, Sparkles, Mountain, Car, Crown, Accessibility, Map, Headphones, Phone, Leaf, TreePine, HeartHandshake, Users, Mail, MapPin } from 'lucide-react';
 import ReviewsSection from '@/components/ReviewsSection';
 import Lightbox from '@/components/Lightbox';
 import wildwoodImages from '@/data/wildwood-images.json';
@@ -401,16 +401,12 @@ export default function Home() {
                 <Leaf size={16} />
                 <span>Global Eco-Tourism & Circular Hospitality</span>
               </div>
-              <h2>Pioneering <strong>Sustainable Hospitality</strong> on the Global Stage</h2>
+              <h2>Our Story: <strong>Rooted in Nature</strong> & Sustainability</h2>
               <p>
-                From rural Naivasha to the world stage at <strong>Ecomondo 2025 in Italy</strong>,
-                Wild Wood Escapes is pioneering circular hospitality. As the premier eco retreat Kenya has to offer,
-                our founder, Mary Kiragu, has showcased our property as a global model of bioeconomy innovation and sustainable luxury.
+                <strong>Wildwood Escapes was created with a clear mission:</strong> to offer a peaceful connection with nature while providing comfortable and memorable outdoor experiences. As the premier eco retreat Kenya has to offer, we blend raw natural beauty with premium hospitality.
               </p>
               <p>
-                What began as an experiment in upcycling has evolved into world-class nature retreats.
-                We remain rooted in the practices that define us: cooking on solar, harvesting
-                rainwater, and growing organic food, proving that purpose-driven ideas can travel the world.
+                Founded by <strong>Mary Kiragu</strong>, what began as an experiment in upcycling has evolved into world-class nature retreats. From rural Naivasha to showcasing our property as a global model of bioeconomy innovation at <strong>Ecomondo 2025 in Italy</strong>, Mary&apos;s vision of circular hospitality drives everything we do.
               </p>
               <ul className={styles.ecoList}>
                 <li>Circular hospitality: Upcycled container architecture</li>
@@ -429,9 +425,24 @@ export default function Home() {
           <div className={styles.ctaContent}>
             <h2>Book the Best Cottages in Naivasha for Your Staycation</h2>
             <p>Experience the ultimate relaxation in our premium Naivasha holiday homes. Book your stay at the best guest houses and cottages in Naivasha today.</p>
+            
+            <div className={styles.ctaContactInfo}>
+              <div className={styles.ctaContactItem}>
+                <Phone size={20} />
+                <a href="tel:+254783777434" className={styles.ctaContactLink}>+254 783 777434</a>
+              </div>
+              <div className={styles.ctaContactItem}>
+                <Mail size={20} />
+                <a href="mailto:info@wildwoodescapes.com" className={styles.ctaContactLink}>info@wildwoodescapes.com</a>
+              </div>
+              <div className={styles.ctaContactItem}>
+                <MapPin size={20} />
+                <span>Naivasha, Kenya</span>
+              </div>
+            </div>
+
             <Link href="/contact" className={styles.ctaButton}>
-              <Phone size={20} />
-              Contact Us
+              Get in Touch
             </Link>
           </div>
           <div className={styles.ctaImageWrapper}>
