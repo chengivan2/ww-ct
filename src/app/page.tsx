@@ -115,7 +115,7 @@ export default function Home() {
           <h1>Best Guest Houses in Naivasha for Your Next Escape</h1>
           <p>
             Experience the best guest houses in Naivasha near Hell&apos;s Gate.
-            A perfect blend of nature, comfort, and premium hospitality for your ultimate staycation in Naivasha.
+            A perfect blend of nature, comfort, and premium hospitality for your ultimate staycation in Naivasha and one of the best nature escapes in Kenya.
           </p>
           <div className={styles.propertiesGrid}>
             <motion.div
@@ -344,8 +344,8 @@ export default function Home() {
               <h2>Pioneering <strong>Sustainable Hospitality</strong> on the Global Stage</h2>
               <p>
                 From rural Naivasha to the world stage at <strong>Ecomondo 2025 in Italy</strong>,
-                Wild Wood Escapes is pioneering circular hospitality. Our founder, Mary Kiragu,
-                has showcased our retreat as a global model of bioeconomy innovation and sustainable luxury.
+                Wild Wood Escapes is pioneering circular hospitality. As the premier eco retreat Kenya has to offer,
+                our founder, Mary Kiragu, has showcased our property as a global model of bioeconomy innovation and sustainable luxury.
               </p>
               <p>
                 What began as an experiment in upcycling has evolved into world-class nature retreats.
