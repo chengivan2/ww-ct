@@ -30,7 +30,7 @@ export default function Footer() {
                     <h3>Contact</h3>
                     <p>Email: info@wildwoodescapes.com</p>
                     <p>Location: Naivasha, Kenya</p>
-                    <p>Phone: +254 783 777434</p>
+                    <p>Phone: <a href="tel:+254783777434">+254 783 777434</a></p>
                 </div>
             </div>
             <div className={styles.bottom}>
